@@ -1,7 +1,7 @@
-import AokiRocket from '@/components/AokiRocket'
+import Home from "@/pages/Home"
 
-export default function Home() {
+export default function App() {
   return (
-   <AokiRocket/>
+    <Home/>
   )
 }
