@@ -3,10 +3,10 @@ import AokiRocket from '@/components/AokiRocket';
 
 const Home = () => {
   return (
-    <div className="flex flex-col sm:flex-row h-screen banner-main-aoki justify-center">
+    <div className="flex flex-col sm:flex-row h-screen w-full banner-main-aoki justify-center">
 
       {/* Sección del texto */}
-      <div className="w-full sm:w-1/2 p-8 flex flex-col items-center justify-center text-left ml-10 pr-0">
+      <div className="w-full sm:w-1/3 p-4 sm:p-8 flex flex-col items-center justify-center text-left text-container-banner">
         <h1 className="text-white text-4xl sm:text-4xl lg:text-6xl font-bold mb-8 font-poppins text-center sm:text-left w-full">
           A la <span className="gradient-text">suerte</span> <br />hay que ayudarla
         </h1>
@@ -16,7 +16,7 @@ const Home = () => {
       </div>
 
       {/* Sección de la animación */}
-      <div className="w-full sm:w-1/2 p-8 flex items-center justify-center pl-0">
+      <div className="w-full sm:w-1/3 md:w-1/3 h-screen sm:h-auto lg:h-full p-4 sm:p-8 flex items-center justify-center animation-container-banner">
         <AokiRocket />
       </div>
 
