@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+	font-family: basic-sans, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+/* <----------HOME STYLES----------> */
+
+.banner-main-aoki{
+  width: 100vw;
+  height: 100vh;
+  background: #ffff; /* Old browsers */
+  background: -moz-linear-gradient(left, #73aed9 0%, #0881a3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #73aed9 0%,  #0881a3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #73aed9 0%, #0881a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f0c29', endColorstr='#302b63', GradientType=1); /* IE6-9 */
+}
+
+.main-title{
+  font-weight: bold;
+  font-size: 10vw;
+}
+
+.gradient-text {
+  font-weight: bolder;
+  background: linear-gradient(to right, white, #fe9c00, #73aed9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-container-banner{
+  padding-top: 10vh;
+  padding-bottom: 0;
+}
+
+.animation-container-banner{
+  padding-top: 0;
+}
+
+.banner-container{
+	height: 130vh;
+	width: 100vw;
+  @media screen and (max-width: 700px) {
+    height: 150vh;
+    overflow: hidden;
+  }
+}
+
+.second-title-compu{
+  width: 100%;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .btn-bg-color {
+	background-color: #fe9c00;
+  }
+
+/* <----------CLIENTS STYLES----------> */
+body, html {
+	height: 100%;
+	background-color: white;
+  }
+  
+  .container {
+	overflow: hidden;
+	
+	.slider {
+	  animation: slidein 30s linear infinite;
+	  white-space: nowrap;
+  
+	  .logos {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+  
+		.icon {
+		  width: calc(100% / 5);
+		  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+		}
+	  }
+	}
+  }
+  
+  @keyframes slidein {
+	from {
+	  transform: translate3d(0, 0, 0);
+	}
+	to {
+	  transform: translate3d(-100%, 0, 0);
+	}
+  }
+  
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+.bg-pros{
+	background-color:#0881a3;
+}
