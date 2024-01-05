@@ -5,10 +5,8 @@ import ProsComponent from "./ProsComponent";
 import mockupImg from '../../../public/images/captura-para-footer-cromo.png'
 const WhyComponent = () => {
   return (
-    <div className="bg-transparent rounded-full p-8 w-full" style={{ padding: '3vw' }}>
-      
-        <ProsComponent/>
-        <MockupComponent
+    <div className="bg-transparent rounded-full w-full" style={{ padding: '3vw' }}>
+      <MockupComponent
         title="Descubre el Futuro de la Eficiencia Empresarial con Aoki"
         components={[
           <div key="1"><span className="font-semibold">Experiencia del Usuario sin Precedentes</span> - Permite a tus clientes hacer consultas las 24 horas y gestioná sus interacciones</div>,
@@ -21,6 +19,8 @@ const WhyComponent = () => {
         imageAlt="Descripción de la imagen"
         direction="textFirst"
       />
+        <ProsComponent/>
+        
     </div>
   );
 };

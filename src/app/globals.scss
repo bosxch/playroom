@@ -5,8 +5,7 @@
 
 *{
 	font-family: basic-sans, sans-serif;
-	font-style: normal;
-	font-weight: 100;
+	font-weight: 600;
 	}
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -130,4 +129,69 @@ body, html {
   
 .bg-pros{
 	background-color:#0881a3;
+}
+
+
+.btn-call-to-action{
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: inherit;
+font-weight: 500;
+font-size: 20px;
+padding: 0.8em 1.3em 0.8em 0.9em;
+color: #fff;
+background: #fe9c00;
+border: none;
+letter-spacing: .05em;
+border-radius: 16px;
+font-family: basic-sans, sans-serif;
+font-weight: bold;
+border-radius: 16px;
+
+
+}
+
+button {
+  padding: 1em;
+  border: none;
+  letter-spacing: .05em;
+  border-radius: 16px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cta{
+font-family: basic-sans, sans-serif;
+font-weight: bold;
+justify-content: center;
+display: flex;
+width: max-content;
+padding: 1em;
+}
+
+.icon {
+  width: 24px; // ajusta el ancho según sea necesario
+  height: 24px; // ajusta la altura según sea necesario
+}
+
+.container-items-pros{
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+}
+
+.items-banner{
+  display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+
 }

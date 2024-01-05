@@ -8,8 +8,9 @@ const Home = () => {
   return (
     <div className="relative flex flex-col items-center flex-1 w-full h-full overflow-y-auto banner-main-aoki overflow-x-hidden">
       <Banner />
-      <BenefitsComponent/>
       <WhyComponent/>
+
+      <BenefitsComponent/>
 
       {/* <ClientsComponent/> */}
     <BentoComponentIndex />

@@ -62,8 +62,8 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   };
 
   return (
-    <div className="bg-transparent rounded-full p-8 w-full">
-      <div className="bg-transparent rounded-xl p-6 w-100">
+    <div className="bg-transparent rounded-full pb-8 w-full">
+      <div className="bg-transparent rounded-xl w-100">
         {direction === "textFirst" ? renderTextFirst() : renderImageFirst()}
       </div>
     </div>
