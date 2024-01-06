@@ -3,6 +3,8 @@ import React from "react";
 import BtnCallToAction from "../BtnCTA";
 import checkImg from "../../../public/images/check.png";
 import Image from "next/image";
+import ReactPlayer from "react-player";
+import Video from "../VideoComponent/VideoComponentIndex";
 const Banner = () => {
   return (
     <div className="banner-main-aoki flex flex-col h-full">
@@ -37,7 +39,7 @@ const Banner = () => {
           </div>
           <div className="flex flex-col sm:flex-row justify-center items-center w-full p-8 sm:space-x-8 absolute bottom-0 items-banner mr-8 ">
             <div
-              className="flex flex-row items-center text-white pb-8"
+              className="flex flex-row items-center text-white"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -50,7 +52,7 @@ const Banner = () => {
               <p>Disminuye tiempos de espera</p>
             </div>
             <div
-              className="flex flex-row items-center text-white pb-8"
+              className="flex flex-row items-center text-white"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -63,7 +65,7 @@ const Banner = () => {
               <p>Mejora la experiencia de tus usuarios</p>
             </div>
             <div
-              className="flex flex-row items-center text-white pb-8"
+              className="flex flex-row items-center text-white"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -90,6 +92,7 @@ const Banner = () => {
             <span className="gradient-text">fácil</span>
           </p>
           {/* <button className="w-60 text-white p-2 mb-2 mt-6 btn-bg-color">Empezá tu prueba gratuita</button> */}
+          <Video width="90vw" height="auto"/>
           <div className="btn-container">
             <BtnCallToAction
               text={"Empezá tu prueba gratuita hoy"}

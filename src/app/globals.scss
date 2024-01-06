@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* Your other styles */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
@@ -182,6 +185,7 @@ button {
   padding: 1em;
 }
 
+
 .icon {
   width: 24px; // ajusta el ancho según sea necesario
   height: 24px; // ajusta la altura según sea necesario
@@ -205,3 +209,83 @@ button {
     display: none;
   }
 }
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: #FEF852;
+  --backgroundColorSecondary: #FFFC94;
+  --textPrimaryColor: #2A2A2A;
+
+  --headlineBig: clamp(3rem, 10vw, 15rem);
+  --headlineSmall: clamp(1rem, 1.2vw, 6rem);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--backgroundColor);
+}
+
+
+.reveal {
+    background: var(--backgroundColor);
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+  
+  .reveal-text {
+    font-weight: 800;
+    font-size: var(--headlineBig);
+    line-height: var(--headlineBig);
+    color: var(--backgroundColor);
+    filter: drop-shadow(0 0 0.06rem rgb(2, 2, 2));
+  }
+  
+  .spacing-small {
+    height: 50vh;
+  }
+  
+  .spacing {
+    height: 100vh;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .reveal {
+      padding-left: 10px;
+    }
+  }
+  .navbar-bg{
+    background-color: #0881a3;
+  }
+
+  .li-item-text:hover{
+    color: #fe9c00;
+  }
+
+  .btn-nav-bar {
+    padding: 0.1vw 2vw !important
+  }
+
+  .bg-line-video{
+    background-color: #fe9c00;
+
+  }
+
+  .active-dropdown {
+    color: #fe9c00 !important;
+  }
+
+  .btn-section-cta{
+    width: 40vw !important;
+    font-size: 2rem;
+    @media screen and (max-width: 700px) {
+      width: 80vw !important;
+      font-size: 1rem;
+    }
+  }

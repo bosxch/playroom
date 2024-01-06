@@ -2,7 +2,7 @@
 import React from "react";
 import MockupComponent from "../MockupsComponent/MockupComponentIndex";
 import ProsComponent from "./ProsComponent";
-import mockupImg from '../../../public/images/captura-para-footer-cromo.png'
+import mockupImg from '../../../public/images/captura-footer-bot.a.png' 
 const WhyComponent = () => {
   return (
     <div className="bg-transparent rounded-full w-full" style={{ padding: '3vw' }}>
