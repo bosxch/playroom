@@ -56,28 +56,36 @@ const NavBar = () => {
     };
     
     useEffect(() => {
-        const handleColorChange = () => {
-          const dropdownButtons = document.querySelectorAll(".li-item-text");
-          dropdownButtons.forEach(button => {
-            button.style.color = "";
-          });
+      const handleColorChange = () => {
+        const dropdownButtons = document.querySelectorAll(".li-item-text");
+        dropdownButtons.forEach(button => {
+          (button as HTMLElement).style.color = "";
+        });
     
-          if (isActiveMore) {
-            document.getElementById("dropdown-button-about").style.color = "#fe9c00";
-          }
-          if (isActiveProducts) {
-            document.getElementById("dropdown-button-products").style.color = "#fe9c00";
-          }
-          if (isActiveSN) {
-            document.getElementById("dropdown-button-contact").style.color = "#fe9c00";
-          }
-          if (isActiveNN) {
-            document.getElementById("dropdown-button-about-news").style.color = "#fe9c00";
+        const setButtonColor = (buttonId: string, color: string) => {
+          const button = document.getElementById(buttonId);
+          if (button) {
+            (button as HTMLElement).style.color = color;
           }
         };
     
-        handleColorChange();
-      }, [isActiveMore, isActiveProducts, isActiveSN, isActiveNN]);
+        if (isActiveMore) {
+          setButtonColor("dropdown-button-about", "#fe9c00");
+        }
+        if (isActiveProducts) {
+          setButtonColor("dropdown-button-products", "#fe9c00");
+        }
+        if (isActiveSN) {
+          setButtonColor("dropdown-button-contact", "#fe9c00");
+        }
+        if (isActiveNN) {
+          setButtonColor("dropdown-button-about-news", "#fe9c00");
+        }
+      };
+    
+      handleColorChange();
+    }, [isActiveMore, isActiveProducts, isActiveSN, isActiveNN]);
+    
 
       const functions = ['Chatbots', 'Asistente Virtual', 'Inteligencia Artificial', 'Chat Multiagente', 'Envios de recordatorios', 'Envios masivos', 'Dashbord con estadisticas']
     
@@ -92,10 +100,10 @@ return (
         <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
         <Image src={logo} alt="Aoki Logo" width={100} height={100} /> {/* Utiliza la etiqueta Image de Next.js */}
         </a>
-        <button data-collapse-toggle="mega-menu-full"           aria-controls="mega-menu-full"
+        <button data-collapse-toggle="mega-menu-full"           
           aria-expanded={mobileMenuOpen}
           onClick={toggleMobileMenu}
- type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+ type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" >
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
