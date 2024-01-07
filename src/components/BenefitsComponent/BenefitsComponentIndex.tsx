@@ -10,7 +10,7 @@ const BenefitsComponent = () => {
   const benefits = [
     {
       icon: <CiClock1 fontSize='5vh' color='#0881a3'/>,
-      title: "Disminií tiempos",
+      title: "Disminuí tiempos",
     },
     {
       icon: <TbSettingsAutomation fontSize='5vh' color='#0881a3'/>,

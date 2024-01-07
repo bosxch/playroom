@@ -4,7 +4,7 @@
 import React from "react";
 // Indicar a TypeScript que el módulo es de tipo 'any'
 // @ts-ignore
-import videoMP4 from '../../../public/video/VIDEO-AOKI.mp4';
+import videoMP4 from '../../../public/video/AOKI-ABOUT.mp4';
 import ReactPlayer from "react-player";
 
 const Video = ({width = 'auto', height = '80vh'}) => {

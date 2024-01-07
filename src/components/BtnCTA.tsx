@@ -18,7 +18,7 @@ const BtnCallToAction:React.FC<BtnCTAProps> = ({text, rocket, className}) => {
         fontFamily: "basic-sans, sans-serif",
         justifyContent: 'center',
       }}
-      className={`btn-cta ${className ? className : null}`}
+      className={`btn-cta transition-transform transform hover:scale-105 ${className ? className : null}`}
       onClick={handleClick}
     >
         {rocket ? 
