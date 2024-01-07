@@ -92,7 +92,7 @@ const Banner = () => {
             <span className="gradient-text">fácil</span>
           </p>
           {/* <button className="w-60 text-white p-2 mb-2 mt-6 btn-bg-color">Empezá tu prueba gratuita</button> */}
-          <Video width="90vw" height="auto"/>
+          <Video width="90vw" height="auto" />
           <div className="btn-container">
             <BtnCallToAction
               text={"Empezá tu prueba gratuita hoy"}

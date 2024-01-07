@@ -15,7 +15,9 @@ const BenefitItem: React.FC<BenefitItemProps> = ({ icon, title }) => {
       style={{ boxShadow: boxShadowStyle }}
     >
       <div className="benefit-icon mb-6">{icon}</div>
-      <div className="benefit-title text-center" style={{color:'#0881a3'}}>{title}</div>
+      <div className="benefit-title text-center" style={{ color: "#0881a3" }}>
+        {title}
+      </div>
     </div>
   );
 };

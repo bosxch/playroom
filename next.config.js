@@ -2,22 +2,6 @@
 const nextConfig = {}
 
 module.exports = {
-<<<<<<< HEAD
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(mp4|webm)$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          publicPath: '/_next',
-          name: 'static/media/[name].[hash].[ext]',
-        },
-      },
-    });
-    return config;
-  },
-};
-=======
     // ... otras configuraciones ...
   
     webpack: (config, { isServer }) => {
@@ -33,4 +17,3 @@ module.exports = {
     },
   };
   
->>>>>>> 8313ecdcaf4e51cf7ebe4adc557d43d37db4e305

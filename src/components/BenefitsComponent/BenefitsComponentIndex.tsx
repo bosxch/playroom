@@ -9,30 +9,32 @@ import { FaUsers } from "react-icons/fa6";
 const BenefitsComponent = () => {
   const benefits = [
     {
-      icon: <CiClock1 fontSize='5vh' color='#0881a3'/>,
+      icon: <CiClock1 fontSize="5vh" color="#0881a3" />,
       title: "Disminuí tiempos",
     },
     {
-      icon: <TbSettingsAutomation fontSize='5vh' color='#0881a3'/>,
+      icon: <TbSettingsAutomation fontSize="5vh" color="#0881a3" />,
       title: "Automatizate",
     },
     {
-      icon: <GrOptimize fontSize='5vh' color='#0881a3'/>,
+      icon: <GrOptimize fontSize="5vh" color="#0881a3" />,
       title: "Apunta a la eficiencia",
     },
     {
-      icon: <FaRobot fontSize='5vh'color='#0881a3'/>,
+      icon: <FaRobot fontSize="5vh" color="#0881a3" />,
       title: "Meté la IA en tu equipo",
     },
     {
-      icon: <FaUsers fontSize='5vh'color='#0881a3'/>,
+      icon: <FaUsers fontSize="5vh" color="#0881a3" />,
       title: "Cubrí mejor a tus clientes",
     },
   ];
 
   return (
-    <div className="benefits-container p-8 bg-transparent flex justify-center w-full"
-    style={{padding:'3vw'}}>
+    <div
+      className="benefits-container p-8 bg-transparent flex justify-center w-full"
+      style={{ padding: "3vw" }}
+    >
       <div className="benefits-displayer grid grid-cols-1 gap-6 md:grid-cols-5 md:gap-4 lg:grid-cols-5 lg:gap-4 w-75 md:w-full lg:w-full">
         {" "}
         {benefits.map((benefit, index) => (
