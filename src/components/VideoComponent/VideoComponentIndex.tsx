@@ -1,13 +1,9 @@
-// src/components/VideoComponent/VideoComponentIndex.tsx
-
 "use client";
+
 import React from "react";
-// Indicar a TypeScript que el módulo es de tipo 'any'
-// @ts-ignore
-import videoMP4 from "../../../public/video/AOKI-ABOUT.mp4";
 import ReactPlayer from "react-player";
 
-const Video = ({ width = "auto", height = "80vh" }) => {
+const Video = ({ width = "auto", height = "70vh" }) => {
   const shouldDisplayText = width === "auto";
 
   return (
@@ -24,12 +20,12 @@ const Video = ({ width = "auto", height = "80vh" }) => {
       <ReactPlayer
         width={width}
         height={height}
-        url={videoMP4}
+        url='/static/videos/VIDEO-HOME-ABOUT.mp4'
         controls={true}
         light={false}
         pip={true}
       />
-      <source src={videoMP4} type="video/mp4" />
+      <source src='/static/videos/VIDEO-HOME-ABOUT.mp4' type="video/mp4" />
     </div>
   );
 };
