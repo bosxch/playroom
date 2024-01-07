@@ -64,6 +64,9 @@
 .text-container-banner {
   padding-top: 10vh;
   padding-bottom: 0;
+  @media screen and (max-width : 700px) {
+    padding: 0 !important;
+  }
 }
 
 .animation-container-banner {
@@ -76,6 +79,8 @@
   @media screen and (max-width: 700px) {
     height: 150vh;
     overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 

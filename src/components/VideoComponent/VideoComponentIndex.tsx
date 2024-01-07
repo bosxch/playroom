@@ -3,12 +3,12 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-const Video = ({ width = "auto", height = "70vh" }) => {
+const Video = ({ width = "auto", height = "75vh" }) => {
   const shouldDisplayText = width === "auto";
 
   return (
     <div
-      className={`p-8 flex flex-row text-xl relative ${
+      className={`p-8 flex h-100 flex-row justify-center align-center text-xl relative ${
         shouldDisplayText ? "hidden md:block lg:block" : "md:hidden lg:hidden"
       }`}
     >

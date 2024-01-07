@@ -17,7 +17,7 @@ const TestimonialsComponent = () => {
         "Increíblemente satisfecho con los resultados obtenidos. La implementación de esta solución elevó nuestra eficiencia operativa y facilitó la toma de decisiones estratégicas. Recomiendo encarecidamente su uso.",
     },
     {
-      name: "Nacho Malo",
+      name: "Maria del Cristo",
       rol: "",
       company: "Distrisuper",
       testimonio:
