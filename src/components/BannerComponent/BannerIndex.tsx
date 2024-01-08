@@ -8,7 +8,7 @@ import Video from "../VideoComponent/VideoComponentIndex";
 const Banner = () => {
   return (
     <div className="banner-main-aoki flex flex-col h-full" style={{paddingTop: '0vh'}}>
-      <div className="flex flex-col sm:flex-row h-100 w-100  p-8  justify-center banner-container bg-transparent" style={{paddingTop: '0vh', marginBottom: '2vh'}}>
+      <div className="flex flex-col sm:flex-row h-100 w-100  p-8  justify-center banner-container bg-transparent" style={{paddingTop: '0vh', marginBottom: '5vh'}}>
         {/* Sección del texto */}
         <div className="w-full p-8 sm:p-8 flex flex-col items-center justify-center text-center text-container-banner" >
           <p className="text-white text-xl sm:text-2xl lg:text-4xl font-bold mb-4 font-poppins text-center w-full sm:text-center">
