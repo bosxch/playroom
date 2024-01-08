@@ -10,23 +10,31 @@ const WhyComponent = () => {
       style={{ padding: "3vw" }}
     >
       <MockupComponent
-        title="Descubre el Futuro de la Eficiencia Empresarial con Aoki"
+        title="¿Por qué un Chatbot?"
         components={[
+          ,
           <div key="1">
-            <span className="font-semibold">
-              Experiencia del Usuario sin Precedentes
-            </span>{" "}
-            - Permite a tus clientes hacer consultas las 24 horas y gestioná sus
-            interacciones
-          </div>,
-          <div key="2">
-            <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
             <p>
-              Sabemos que cada empresa es única. Por eso, nuestro software es
-              altamente personalizable y se adapta a las necesidades específicas
-              de tu negocio. Ya sea que estés en manufactura, logística, o
-              cualquier otro sector, Aoki se adapta para maximizar tu potencial
+              En la era digital actual, la implementación de tecnologías
+              avanzadas se ha vuelto imperativa para el éxito empresarial. Aoki,
+              como líder innovador, reconoce la importancia de mejorar la
+              interacción con sus clientes y optimizar la eficiencia operativa.
+              ¿Por qué un Chatbot? Los Chatbots, impulsados por la inteligencia
+              artificial (IA), representan una solución integral para ofrecer un
+              servicio al cliente ágil y personalizado.
             </p>
+          </div>,
+          <div key="1">
+            <p className="font-bold text-xl">
+              Nuestro Chatbot de última generación
+            </p>
+            <span className="font-semibold"></span> Un verdadero asistente
+            virtual, está diseñado para comprender y responder a las necesidades
+            de los usuarios, brindando una experiencia interactiva única.
+            Descubra cómo la implementación estratégica de la tecnología de
+            Chatbot de Aoki puede transformar la forma en que interactuamos y
+            mejoramos la conexión con nuestros clientes, impulsando así el
+            crecimiento y la satisfacción del cliente en la era digital.
           </div>,
         ]}
         imageSrc={mockupImg}

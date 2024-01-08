@@ -9,19 +9,22 @@ import Footer from "@/components/FooterComponent/FooterComponentIndex";
 import MockUpBlok from "@/components/MockUpBlok";
 import SectionCTA from "@/components/SectionCTA";
 import ClientsComponentIndex from "@/components/ClientsComponent/ClientsComponentIndex";
+import FAQComponent from "@/components/FAQComponent/FAQComponent";
 const Home = () => {
   return (
     <div className="relative flex flex-col items-center flex-1 w-full h-full overflow-y-auto banner-main-aoki overflow-x-hidden">
       <NavBar />
       <Banner />
       <Video />
+      <BenefitsComponent />
+
       <WhyComponent />
       <SectionCTA />
       <ClientsComponentIndex />
 
-      <BenefitsComponent />
       <MockUpBlok />
       {/* <BentoComponentIndex /> */}
+      <FAQComponent/>
       <Footer />
     </div>
   );

@@ -8,34 +8,32 @@ import Video from "../VideoComponent/VideoComponentIndex";
 const Banner = () => {
   return (
     <div className="banner-main-aoki flex flex-col h-full" style={{paddingTop: '0vh'}}>
-      <div className="flex flex-col sm:flex-row h-100 w-100  p-8  justify-center banner-container bg-transparent" style={{paddingTop: '0vh', marginBottom: '5vh'}}>
+      <div className="flex flex-col sm:flex-row h-100 w-100  p-4  justify-center banner-container bg-transparent" style={{paddingTop: '0vh', marginBottom: '5vh'}}>
         {/* Sección del texto */}
-        <div className="w-full p-8 sm:p-8 flex flex-col items-center justify-center text-center text-container-banner" >
-          <p className="text-white text-xl sm:text-2xl lg:text-4xl font-bold mb-4 font-poppins text-center w-full sm:text-center">
-            Querés <span className="gradient-text">innovación</span>, querés{" "}
-            <span className="gradient-text">Aoki</span>
+        <div className="w-full p-4 sm:p-8 flex flex-col items-center justify-center text-center text-container-banner" >
+          <p className="text-white p-4 text-xl sm:text-2xl lg:text-4xl font-bold mb-4 font-poppins text-center w-full sm:text-center">
+          ¿Necesitas <span className="gradient-text">automatizar la comunicacion</span> en tu empresa?
           </p>
-          <h1 className="text-white text-4xl sm:text-6xl lg:text-8xl font-bold  font-poppins text-center sm:text-center w-full">
-            Subí de nivel <span className="gradient-text">tu empresa</span>
+          <h1 className="text-white p-4 text-3xl sm:text-6xl lg:text-8xl font-bold  font-poppins text-center sm:text-center w-full">
+          Potencia tú <span className="gradient-text">Estrategia</span>  
             <br />
-            de la mano de la <span className="gradient-text">IA</span>
+            con un <span className="gradient-text">Chatbot con IA</span>
           </h1>
           <div className="second-title-compu">
             <p className="text-white text-lg sm:text-lg lg:text-lg font-bold  font-poppins text-center w-full sm:text-center">
-              <span className="gradient-text">Automatizarte</span> nunca fue tan{" "}
-              <span className="gradient-text">fácil</span>
+            Lográ que <span className="gradient-text">tus clientes</span> se <span className="gradient-text">autogestionen</span>
             </p>
             {/* <button className="w-60 btn-bg-color text-white p-2 mb-2 mt-6">Empezá tu prueba gratuita</button> */}
             <div className="btn-container">
               <BtnCallToAction
-                text={"Empezá tu prueba gratuita hoy"}
+                text={"Iniciá gratis hoy"}
                 rocket={false}
-                className={"w-60 text-white p-2 mb-2 mt-6 btn-bg-color"}
+                className={"w-60 text-white text-bold text-xl p-2 mb-2 mt-6 btn-bg-color"}
               />
             </div>
-            <p className="text-white text-sm mb-4">
+            {/* <p className="text-white text-sm mb-4">
               Podes empezar en menos de 60 segundos
-            </p>
+            </p> */}
           </div>
           <div className="flex flex-col sm:flex-row justify-center items-center w-full p-8 sm:space-x-8 absolute bottom-0 items-banner mr-8 ">
             <div
@@ -88,21 +86,21 @@ const Banner = () => {
         {/* Texto visible solo en móviles */}
         <div className="w-full sm:w-1/2 md:w-1/2 p-4 sm:p-8 flex flex-col items-center justify-center animation-container-banner sm:hidden">
           <p className="text-white text-lg sm:text-lg lg:text-lg font-bold font-poppins text-center w-full sm:text-left">
-            <span className="gradient-text">Automatizarte</span> nunca fue tan{" "}
-            <span className="gradient-text">fácil</span>
+          Lográ que <span className="gradient-text">tus clientes</span> se <span className="gradient-text">autogestionen</span>
           </p>
+
           {/* <button className="w-60 text-white p-2 mb-2 mt-6 btn-bg-color">Empezá tu prueba gratuita</button> */}
-          <Video width="90vw" height="auto" />
+          <Video width="90vw" height="auto" className='video-banner'/>
           <div className="btn-container">
-            <BtnCallToAction
-              text={"Empezá tu prueba gratuita hoy"}
-              rocket={false}
-              className={"w-60 text-white p-2 mb-2 mt-6 btn-bg-color"}
-            />
+          <BtnCallToAction
+                text={"Inicia gratis hoy"}
+                rocket={false}
+                className={"w-60 text-white text-bold text-xl p-2 mb-2 mt-6 btn-bg-color"}
+              />
           </div>
-          <p className="text-white text-sm mb-4">
+          {/* <p className="text-white text-sm mb-4">
             Podes empezar en menos de 60 segundos
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

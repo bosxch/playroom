@@ -7,7 +7,7 @@ const MockUpBlok = () => {
       style={{ padding: "3vw" }}
     >
       <MockupComponent
-        title="Descubre el Futuro de la Eficiencia Empresarial con Aoki"
+        title="Descrubrí todo lo que podes hacer con tu chatbot"
         components={[
           <div key="1">
             <span className="font-semibold">
@@ -31,7 +31,7 @@ const MockUpBlok = () => {
         direction="imageFirst"
       />
       <MockupComponent
-        title="Descubre el Futuro de la Eficiencia Empresarial con Aoki"
+        title="Descrubrí todo lo que podes hacer con tu chatbot"
         components={[
           <div key="1">
             <span className="font-semibold">

@@ -56,7 +56,7 @@ const ClientsComponent = () => {
   return (
     <div className="mb-2 mt-4" style={{ padding: "3vw" }}>
       <p className="text-center font-bold text-4xl text-white mb-8">
-        Nuestros Clientes
+      Preferido por las marcas líderes
       </p>
 
       <div className="scroller" data-speed="slow">

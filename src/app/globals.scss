@@ -30,6 +30,12 @@
   width: 100vw;
   height: 100vh;
   background: #ffff; /* Old browsers */
+  // background: -moz-linear-gradient(to bottom right, #f2f2f2, #73aed9);
+
+  // background: -webkit-linear-gradient(to bottom right, #f2f2f2, #73aed9);
+
+  // background: linear-gradient(to bottom right, #f2f2f2, #73aed9);
+
   background: -moz-linear-gradient(
     left,
     #73aed9 0%,
@@ -207,8 +213,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   gap: 3em;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 3rem;
   width: 100vw;
   @media screen and (max-width: 700px) {
     display: none;
@@ -293,4 +298,19 @@ body {
       width: 80vw !important;
       font-size: 0.8rem;
     }
+  }
+
+  .btn-nav-bar-login {
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+    background-color: #73aed9;
+  }
+
+  .btn-bg-color-login{
+    background-color: #73aed9;
+
+  }
+
+  .video-banner{
+    padding: .5rem;
   }

@@ -55,6 +55,7 @@ const NavBar = () => {
     setIsActiveMore(!isActiveMore);
   };
 
+  
   useEffect(() => {
     const handleColorChange = () => {
       const dropdownButtons = document.querySelectorAll(".li-item-text");
@@ -150,7 +151,7 @@ const NavBar = () => {
           className={`items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1`}
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg navbar-bg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 navbar-bg">
-            <li>
+            {/* <li>
               <button
                 id="dropdown-button-about"
                 style={{ color: isActiveMore ? "active-dropdown" : "" }}
@@ -175,7 +176,7 @@ const NavBar = () => {
                   />
                 </svg>
               </button>
-            </li>
+            </li> */}
             <li>
               <button
                 id="dropdown-button-products"
@@ -241,10 +242,17 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
+                            <li>
+              <BtnCallToAction
+                rocket={false}
+                text="Iniciar Sesión"
+                className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar-login"
+              />
+            </li>
             <li>
               <BtnCallToAction
                 rocket={false}
-                text="Probá gratis YA"
+                text="REGISTRATE GRATIS"
                 className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar"
               />
             </li>
@@ -258,7 +266,7 @@ const NavBar = () => {
       >
         {/* Contenido del menú móvil */}
         <ul className="flex flex-col pb-4 ">
-          <li>
+          {/* <li>
             <button
               id="dropdown-button-about"
               style={{ color: isActiveMore ? "active-dropdown" : "" }}
@@ -283,7 +291,7 @@ const NavBar = () => {
                 />
               </svg>
             </button>
-          </li>
+          </li> */}
           <li>
             <button
               id="dropdown-button-products"
@@ -349,10 +357,17 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
+                                            <li className="flex justify-center p-4">
+              <BtnCallToAction
+                rocket={false}
+                text="Iniciar Sesión"
+                className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color-login btn-bg-color btn-nav-bar btn-nav-bar-login"
+              />
+            </li>
           <li className="flex justify-center p-4">
             <BtnCallToAction
               rocket={false}
-              text="Probá gratis YA"
+              text="REGISTRATE GRATIS"
               className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar"
             />
           </li>{" "}

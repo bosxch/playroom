@@ -32,7 +32,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
           <h2 className="text-4xl font-bold mb-4">{title}</h2>
           {renderComponents()}
         </div>
-        <div>
+        <div className="flex justify-center h-full">
           <Image
             src={imageSrc}
             alt={imageAlt}

@@ -62,7 +62,7 @@ const ProsComponent = () => {
     >
       <div className="text-center mb-4">
         <p className="font-bold text-4xl text-white">
-          Formá parte de la <span className="gradient-text">innovación</span>
+        <span className="gradient-text">Tu Asistente Virtual</span> es el <span className="gradient-text">futuro</span>  
         </p>
         <p className="pb-2 text-white">
           Si no compras bota tenes 9 años de mala suerte
