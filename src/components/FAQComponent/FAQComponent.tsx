@@ -7,24 +7,36 @@ import './FAQStyles.scss'; // Import Tailwind CSS
 const FAQComponent = () => {
   const faqData = [
     {
-      question: 'Pregunta 1',
+      question: '¿Qué servicios ofrece su empresa en el desarrollo de chatbots y asistentes virtuales para empresas?',
       answer:
-        'Respuesta 1',
+        'Nuestra empresa se especializa en proporcionar soluciones de chatbots y asistentes virtuales diseñadas para mejorar la eficiencia operativa y la amigabilidad en la interacción con los usuarios empresariales.',
     },
     {
-      question: 'Pregunta 2',
-      answer: 'Respuesta 2',
+      question: '¿Cómo se destacan sus productos en la integración con plataformas como Mercado Libre, Meta, WhatsApp y sistemas de CRM?',
+      answer: 'Nuestros productos se distinguen por su integración fluida con Mercado Libre, Meta, WhatsApp y diversas plataformas de CRM. Esto permite a las empresas gestionar de manera eficiente las interacciones y la información clave.',
     },
     {
-      question: 'Pregunta 3',
+      question: '¿Cuáles son las ventajas clave de utilizar chatbots y asistentes virtuales en entornos empresariales?',
       answer:
-        'Respuesta 3',
+        'La implementación de chatbots y asistentes virtuales en entornos empresariales mejora significativamente la eficiencia operativa al automatizar tareas, al tiempo que proporciona una experiencia de usuario amigable para clientes y empleados.',
     },
     {
-      question: 'Pregunta 4',
+      question: '¿Cómo personalizan sus chatbots y asistentes virtuales para adaptarse a las necesidades específicas de cada cliente empresarial?',
       answer:
-        'Respuesta 4',
+        'Nuestro enfoque se centra en la personalización. Ajustamos la apariencia, comportamiento y funcionalidades de nuestros productos para satisfacer las necesidades únicas de cada empresa, brindando soluciones adaptadas y amigables.',
     },
+    {
+      question: '¿Qué medidas de seguridad implementan para proteger la información empresarial en las integraciones con sistemas de CRM y otras plataformas?',
+      answer: 'La seguridad es una prioridad. Implementamos medidas avanzadas para garantizar la seguridad de la información empresarial en todas las integraciones, proporcionando tranquilidad a nuestros clientes.',
+    },
+    {
+      question: '¿Ofrecen servicios de mantenimiento continuo y soporte técnico después de la implementación de chatbots y asistentes virtuales?',
+      answer: 'Sí, nos comprometemos a brindar servicios de mantenimiento y soporte técnico para asegurar el rendimiento continuo y la adaptación de nuestros productos a las necesidades cambiantes de las empresas a lo largo del tiempo.',
+    },
+    {
+      question: '¿Cómo puedo solicitar más información o una cotización para implementar chatbots y asistentes virtuales en mi empresa?',
+      answer: 'Para obtener más información o solicitar una cotización personalizada, lo invitamos a ponerse en contacto con nuestro equipo a través del formulario en nuestro sitio web. Estaremos encantados de ayudarle a mejorar la eficiencia y la amigabilidad en su entorno empresarial.',
+    }
   ];
 
   const handleQuestionClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>, index: number) => {
@@ -38,23 +50,23 @@ const FAQComponent = () => {
       gsap.to(imgTab, { duration: 0.2, rotate: '0deg' });
     } else {
       elToOpen.classList.add('opened');
-      gsap.to(elToOpen, { duration: 0.2, height: elHeight + 40, opacity: 1, padding: '20px 15px' });
+      gsap.to(elToOpen, { duration: 0.2, height: elHeight + 40, opacity: 1, padding: '10px 15px' });
       gsap.to(imgTab, { duration: 0.2, rotate: '45deg' });
     }
   };
   
   
   return (
-    <div className="container-faq p-8" style={{padding: '3vw'}}>
+    <div className="container-faq p-8 w-full" style={{padding: '3vw', paddingTop: 0}}>
       <h1 className="text-center py-8 text-4xl">Preguntas frecuentes</h1>
       {faqData.map((item, index) => (
-        <div className="questions" key={index}>
-          <div className="visible-pannel bg-transparent rounded-lg p-4 md:p-6 flex justify-between items-center" onClick={(e) => handleQuestionClick(e, index)}>
-            <h2 className="ml-4 text-2xl">{item.question}</h2>
-            <p className="mr-4 w-6 text-4xl">+</p>
+        <div className="questions m-4 btn-bg-color rounded-md p-2" style={{marginLeft: 0, marginRight: 0}} key={index}>
+          <div className="visible-pannel bg-transparent rounded-lg flex justify-between items-center" onClick={(e) => handleQuestionClick(e, index)}>
+            <h2 className="ml-4 text-md" >{item.question}</h2>
+            <p className=" w-6 text-4xl cursor-pointer">+</p>
           </div>
-          <div className="toggle-pannel p-0 opacity-0 overflow-hidden transition-all duration-200">
-            <p className='p-6' style={{paddingTop:'0'}}>{item.answer}</p>
+          <div className="toggle-pannel w-full h-0 p-0 opacity-0 overflow-hidden transition-all duration-200">
+            <p className='p-6 text-md' style={{paddingLeft:'0'}}>{item.answer}</p>
           </div>
         </div>
       ))}
