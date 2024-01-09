@@ -110,9 +110,12 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   };
 
   return (
-    <div className="bg-transparent rounded-full pb-8 w-full">
-      <div className="bg-transparent rounded-xl w-100">
+    <div className="bg-transparent rounded-full pb-8 w-full" style={{padding:'3vw'}}>
+      <div className="bg-transparent rounded-xl w-100 big-screen">
         {direction === "textFirst" ? renderTextFirst() : renderImageFirst()}
+      </div>
+      <div className="small-screen">
+        {renderTextFirst()}
       </div>
     </div>
   );

@@ -1,6 +1,30 @@
 import MockupComponent from "./MockupsComponent/MockupComponentIndex";
 import mockupImg from "../../public/images/captura-para-footer-cromo.png";
+import ArrowLeft from './../../public/images/Arrow-Left-Light-Blue-Home.svg'
+import ArrowRight from './../../public/images/Arrow-Right-Light-Blue-Home.svg'
+import Image from "next/image";
+
 const MockUpBlok = () => {
+
+  const arrowContainerStyle = {
+    width: '100%',
+    position: 'relative' as const,
+    padding: '10px 0',  // padding-top: 10px; padding-bottom: 10px;
+  };
+
+  const arrowStyleLeft = {
+    position: 'absolute' as const,
+    left: '-50px',  
+    bottom: '-100px',
+  };
+
+  const arrowStyleRight = {
+    position: 'absolute' as const,
+    right: '-50px',  
+    bottom: '-100px',
+  };
+
+
   return (
     <div
       className="bg-transparent rounded-full w-full"
@@ -31,6 +55,12 @@ const MockUpBlok = () => {
         direction="imageFirst"
         type="png"
       />
+      <div style={arrowContainerStyle} className="arrows-container">
+        <div style={arrowStyleLeft}>
+          <Image src={ArrowLeft} alt="Arrow Left" width={100} height={100} />
+        </div>
+      </div>
+
       <MockupComponent
         title="Descrubrí todo lo que podes hacer con tu chatbot"
         components={[
@@ -57,6 +87,101 @@ const MockUpBlok = () => {
         type="png"
 
       />
+            <div style={arrowContainerStyle} className="arrows-container">
+        <div style={arrowStyleRight}>
+          <Image src={ArrowRight} alt="Arrow Left" width={100} height={100} />
+        </div>
+      </div>
+            <MockupComponent
+        title="Descrubrí todo lo que podes hacer con tu chatbot"
+        components={[
+          <div key="1">
+            <span className="font-semibold">
+              Experiencia del Usuario sin Precedentes
+            </span>{" "}
+            - Permite a tus clientes hacer consultas las 24 horas y gestioná sus
+            interacciones
+          </div>,
+          <div key="2">
+            <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
+            <p>
+              Sabemos que cada empresa es única. Por eso, nuestro software es
+              altamente personalizable y se adapta a las necesidades específicas
+              de tu negocio. Ya sea que estés en manufactura, logística, o
+              cualquier otro sector, Aoki se adapta para maximizar tu potencial
+            </p>
+          </div>,
+        ]}
+        imageSrc={mockupImg}
+        imageAlt="Descripción de la imagen"
+        direction="imageFirst"
+        type="png"
+
+      />
+      <div style={arrowContainerStyle} className="arrows-container">
+        <div style={arrowStyleLeft}>
+          <Image src={ArrowLeft} alt="Arrow Left" width={100} height={100} />
+        </div>
+      </div>
+<MockupComponent
+        title="Descrubrí todo lo que podes hacer con tu chatbot"
+        components={[
+          <div key="1">
+            <span className="font-semibold">
+              Experiencia del Usuario sin Precedentes
+            </span>{" "}
+            - Permite a tus clientes hacer consultas las 24 horas y gestioná sus
+            interacciones
+          </div>,
+          <div key="2">
+            <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
+            <p>
+              Sabemos que cada empresa es única. Por eso, nuestro software es
+              altamente personalizable y se adapta a las necesidades específicas
+              de tu negocio. Ya sea que estés en manufactura, logística, o
+              cualquier otro sector, Aoki se adapta para maximizar tu potencial
+            </p>
+          </div>,
+        ]}
+        imageSrc={mockupImg}
+        imageAlt="Descripción de la imagen"
+        direction="textFirst"
+        type="png"
+
+      />
+      <div style={arrowContainerStyle} className="arrows-container">
+        <div style={arrowStyleRight}>
+          <Image src={ArrowRight} alt="Arrow Left" width={100} height={100} />
+        </div>
+      </div>
+<MockupComponent
+        title="Descrubrí todo lo que podes hacer con tu chatbot"
+        components={[
+          <div key="1">
+            <span className="font-semibold">
+              Experiencia del Usuario sin Precedentes
+            </span>{" "}
+            - Permite a tus clientes hacer consultas las 24 horas y gestioná sus
+            interacciones
+          </div>,
+          <div key="2">
+            <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
+            <p>
+              Sabemos que cada empresa es única. Por eso, nuestro software es
+              altamente personalizable y se adapta a las necesidades específicas
+              de tu negocio. Ya sea que estés en manufactura, logística, o
+              cualquier otro sector, Aoki se adapta para maximizar tu potencial
+            </p>
+          </div>,
+        ]}
+        imageSrc={mockupImg}
+        imageAlt="Descripción de la imagen"
+        direction="imageFirst"
+        type="png"
+
+      />
+
+
     </div>
   );
 };

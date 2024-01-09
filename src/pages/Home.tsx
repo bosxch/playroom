@@ -23,6 +23,8 @@ const Home = () => {
       <ClientsComponentIndex />
 
       <MockUpBlok />
+      <SectionCTA />
+
       {/* <BentoComponentIndex /> */}
       <FAQComponent/>
       <Footer />

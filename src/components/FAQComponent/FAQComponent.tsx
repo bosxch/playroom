@@ -2,7 +2,6 @@
 'use client'
 import React from 'react';
 import gsap from 'gsap';
-import './FAQStyles.scss'; // Import Tailwind CSS
 
 const FAQComponent = () => {
   const faqData = [
@@ -58,11 +57,11 @@ const FAQComponent = () => {
   
   return (
     <div className="container-faq p-8 w-full" style={{padding: '3vw', paddingTop: 0}}>
-      <h1 className="text-center py-8 text-4xl">Preguntas frecuentes</h1>
+      <h1 className="text-center py-8 text-6xl">Preguntas frecuentes</h1>
       {faqData.map((item, index) => (
         <div className="questions m-4 btn-bg-color rounded-md p-2" style={{marginLeft: 0, marginRight: 0}} key={index}>
           <div className="visible-pannel bg-transparent rounded-lg flex justify-between items-center" onClick={(e) => handleQuestionClick(e, index)}>
-            <h2 className="ml-4 text-md" >{item.question}</h2>
+            <p className="ml-4 text-sm" >{item.question}</p>
             <p className=" w-6 text-4xl cursor-pointer">+</p>
           </div>
           <div className="toggle-pannel w-full h-0 p-0 opacity-0 overflow-hidden transition-all duration-200">
