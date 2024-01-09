@@ -29,6 +29,7 @@ const MockUpBlok = () => {
         imageSrc={mockupImg}
         imageAlt="Descripción de la imagen"
         direction="imageFirst"
+        type="png"
       />
       <MockupComponent
         title="Descrubrí todo lo que podes hacer con tu chatbot"
@@ -53,6 +54,8 @@ const MockUpBlok = () => {
         imageSrc={mockupImg}
         imageAlt="Descripción de la imagen"
         direction="textFirst"
+        type="png"
+
       />
     </div>
   );

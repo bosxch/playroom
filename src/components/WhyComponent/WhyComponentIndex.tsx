@@ -37,9 +37,10 @@ const WhyComponent = () => {
             crecimiento y la satisfacción del cliente en la era digital.
           </div>,
         ]}
-        imageSrc={mockupImg}
+        imageSrc={'/static/videos/videoAuto.mp4'}
         imageAlt="Descripción de la imagen"
         direction="textFirst"
+        type="mp4"
       />
       <ProsComponent />
     </div>
