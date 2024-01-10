@@ -76,7 +76,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
       }
     };
   }, [videoRef]);
-  function aplyBR(texto) {
+  function aplyBR(texto: string) {
   const textoConBr = texto.replace(/<br\/>/g, '<br>');
 
   return <div dangerouslySetInnerHTML={{ __html: textoConBr }} />;

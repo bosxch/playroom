@@ -6,7 +6,6 @@ import ArrowRight from './../../public/images/Arrow-Right-Light-Blue-Home.svg'
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import checkByN from '../../public/images/check-nyb.png'
-import videoMeLi from ''
 export interface MockupComponentProps {
   copete: string;
   title: string;
