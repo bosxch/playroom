@@ -57,20 +57,26 @@ const ProsComponent = () => {
 
   return (
     <div
-      className="bg-pros p-8 mt-8 w-full"
-      style={{ padding: "3vw", borderRadius: "25px" }}
+      className=" p-8 mt-8 w-full flex flex-col items-center"
+      style={{ padding: "3vw" }}
     >
       <div className="text-center mb-4">
         <p className="font-bold text-4xl text-white">
         <span className="gradient-text">Tu Asistente Virtual</span> es el <span className="gradient-text">futuro</span>  
         </p>
-        <p className="pb-2 text-white">
+        <p className="pb-2 pt-2 text-white text-sm">
           Si no compras bota tenes 9 años de mala suerte
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pros-container" >
+        <div className='bg-pros' style={{borderRadius: '25px', width: 'fitContent', padding: '0 3vw 0vw 3vw'}}>
         {renderColumn(cosasMalasProps)}
+
+        </div>
+        <div className='bg-pros' style={{borderRadius: "25px"}}>
         {renderColumn(cosasBuenasProps)}
+
+          </div>
       </div>
     </div>
   );

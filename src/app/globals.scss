@@ -169,6 +169,7 @@ html {
 
 .bg-pros {
   background-color: #0881a3;
+
 }
 
 .btn-call-to-action {
@@ -350,3 +351,9 @@ body {
     }
   }
   
+
+  .pros-container {
+    @media screen and (min-width: 700px) {
+      width: 70%;
+    }
+  }
