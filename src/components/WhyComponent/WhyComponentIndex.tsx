@@ -3,6 +3,8 @@ import React from "react";
 import MockupComponent from "../MockupsComponent/MockupComponentIndex";
 import ProsComponent from "./ProsComponent";
 import mockupImg from "../../../public/images/captura-footer-bot.a.png";
+import checkImg from '../../../public/images/check.png'
+import Image from "next/image";
 const WhyComponent = () => {
   return (
     <div
@@ -26,7 +28,7 @@ const WhyComponent = () => {
             </p>
           </div>,
           <div key="1">
-            <p className="font-bold text-xl">
+            <p className="font-bold text-2xl mb-2">
               Nuestro Chatbot de última generación
             </p>
             <span className="font-semibold"></span> Un verdadero asistente
@@ -43,6 +45,47 @@ const WhyComponent = () => {
         direction="textFirst"
         type="mp4"
       />
+                <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-8 items-banner" style={{width: '100%'}}>
+            <div
+              className="flex flex-row items-center text-white"
+              style={{ marginLeft: 0 }}
+            >
+              <Image
+                src={checkImg}
+                alt="check"
+                height={30}
+                width={30}
+                className="mr-2"
+              />
+              <p>Responde de manera inmediata las 24hs</p>
+            </div>
+            <div
+              className="flex flex-row items-center text-white"
+              style={{ marginLeft: 0 }}
+            >
+              <Image
+                src={checkImg}
+                alt="check"
+                height={30}
+                width={30}
+                className="mr-2"
+              />
+              <p>Tus clientes escriben a un sólo número</p>
+            </div>
+            <div
+              className="flex flex-row items-center text-white"
+              style={{ marginLeft: 0 }}
+            >
+              <Image
+                src={checkImg}
+                alt="check"
+                height={30}
+                width={30}
+                className="mr-2"
+              />
+              <p>Envía comprobantes, alertas y recordatorios automáticos</p>
+            </div>
+          </div>
       <ProsComponent />
     </div>
   );

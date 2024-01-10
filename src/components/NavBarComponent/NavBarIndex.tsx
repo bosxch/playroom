@@ -182,7 +182,7 @@ const NavBar = () => {
                 id="dropdown-button-products"
                 style={{ color: isActiveProducts ? "active-dropdown" : "" }}
                 data-collapse-toggle="mega-menu-full-dropdown"
-                className=" li-item-text flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+                className=" li-item-text flex text-white items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
                 onClick={toggleDropdownProducts}
               >
                 Productos{" "}
@@ -206,7 +206,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block li-item-text py-2 px-3 text-gray-900 rounded hover:navbar-bg md:hover:bg-transparent  md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block li-item-text text-white py-2 px-3 text-gray-900 rounded hover:navbar-bg md:hover:bg-transparent  md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Partners
               </a>
@@ -216,7 +216,7 @@ const NavBar = () => {
                 id="dropdown-button-contact"
                 style={{ color: isActiveSN ? "active-dropdown" : "" }}
                 data-collapse-toggle="mega-menu-full-dropdown"
-                className=" li-item-text flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+                className=" li-item-text flex text-white items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
                 onClick={toggleDropdownSN}
               >
                 Conectémonos{" "}
@@ -297,7 +297,7 @@ const NavBar = () => {
               id="dropdown-button-products"
               style={{ color: isActiveProducts ? "active-dropdown" : "" }}
               data-collapse-toggle="mega-menu-full-dropdown"
-              className=" li-item-text flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+              className=" li-item-text flex text-white items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
               onClick={toggleDropdownProducts}
             >
               Productos{" "}
@@ -321,7 +321,7 @@ const NavBar = () => {
           <li>
             <a
               href="#"
-              className="block li-item-text py-2 px-3 text-gray-900 rounded hover:navbar-bg md:hover:bg-transparent  md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+              className="block li-item-text text-white py-2 px-3 text-gray-900 rounded hover:navbar-bg md:hover:bg-transparent  md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
             >
               Partners
             </a>
@@ -331,7 +331,7 @@ const NavBar = () => {
               id="dropdown-button-contact"
               style={{ color: isActiveSN ? "active-dropdown" : "" }}
               data-collapse-toggle="mega-menu-full-dropdown"
-              className=" li-item-text flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
+              className=" li-item-text flex text-white items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:navbar-bg md:hover:bg-transparent md:border-0 md:p-0 dark:text-white  dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700"
               onClick={toggleDropdownSN}
             >
               Conectémonos{" "}
@@ -386,8 +386,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">ChatBot Bota</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">ChatBot Bota</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Asistente virtual con IA que responde como si fueras vos.
                     Les envía comprobantes a tus clientes. Todos escriben a 1
                     solo número.
@@ -399,8 +399,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">CRM Cromo</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">CRM Cromo</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Gestión y seguimientos de clientes. Recordatorios de
                     llamados y mensajería automática interactuando con chatbot.
                   </span>
@@ -411,8 +411,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Ecommerce Lupa</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">Ecommerce Lupa</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Gestiona productos, precios, stocks, fotos, pedidos, cuentas
                     corrientes, ofertas y novedades.
                   </span>
@@ -425,8 +425,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Carga de Facturas Ficha</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">Carga de Facturas Ficha</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Carga el PDF en tu sistema sin tipear todos los códigos y
                     cantidades, y compara precios.
                   </span>
@@ -438,8 +438,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Robot Aoki ONE</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">Robot Aoki ONE</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Robótica para recolección de mercadería entre estanterías.
                   </span>
                 </a>
@@ -454,7 +454,7 @@ const NavBar = () => {
           className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full overflow-y-auto max-h-screen"
         >
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-1 md:px-6">
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl font-semibold mb-4 text-white">
               Conéctate con nosotros en las redes sociales
             </h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -481,8 +481,8 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold">Síguenos en Twitter</div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="font-semibold text-white">Síguenos en Twitter</div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Entérate de las últimas noticias y actualizaciones.
                       </span>
                     </div>
@@ -512,8 +512,8 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold">Síguenos en Facebook</div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="font-semibold text-white">Síguenos en Facebook</div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Conéctate con nuestra comunidad y comparte experiencias.
                       </span>
                     </div>
@@ -549,8 +549,8 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold">Síguenos en LinkedIn</div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="font-semibold text-white">Síguenos en LinkedIn</div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Conéctate con profesionales y descubre oportunidades.
                       </span>
                     </div>
@@ -586,8 +586,8 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold">Síguenos en Instagram</div>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
+                      <div className="font-semibold text-white">Síguenos en Instagram</div>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Explora nuestro mundo visual y comparte momentos
                         especiales.
                       </span>
@@ -613,8 +613,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">ChatBot Bota</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">ChatBot Bota</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Asistente virtual con IA que responde como si fueras vos.
                     Les envía comprobantes a tus clientes. Todos escriben a 1
                     solo número.
@@ -626,8 +626,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">CRM Cromo</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">CRM Cromo</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Gestión y seguimientos de clientes. Recordatorios de
                     llamados y mensajería automática interactuando con chatbot.
                   </span>
@@ -638,8 +638,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Ecommerce Lupa</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">Ecommerce Lupa</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Gestiona productos, precios, stocks, fotos, pedidos, cuentas
                     corrientes, ofertas y novedades.
                   </span>
@@ -652,7 +652,7 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Carga de Facturas Ficha</div>
+                  <div className="font-semibold text-white">Carga de Facturas Ficha</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Carga el PDF en tu sistema sin tipear todos los códigos y
                     cantidades, y compara precios.
@@ -664,8 +664,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">WMS Ware</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">WMS Ware</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     WMS de entrada, guardado y salida de productos en los
                     almacenes. Elimina los errores de stock y optimiza la
                     entrada, recolección y salida de mercadería.
@@ -677,8 +677,8 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Robot Aoki ONE</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold text-white">Robot Aoki ONE</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Robótica para recolección de mercadería entre estanterías.
                   </span>
                 </a>

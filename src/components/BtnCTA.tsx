@@ -7,7 +7,6 @@ interface BtnCTAProps {
   rocket: boolean;
   className: string;
   style?: React.CSSProperties; 
-  padding_nav?: React.CSSProperties
 }
 
 const BtnCallToAction: React.FC<BtnCTAProps> = ({
@@ -15,7 +14,7 @@ const BtnCallToAction: React.FC<BtnCTAProps> = ({
   rocket,
   className,
   style,
-  padding_nav
+  
 }) => {
   const handleClick = () => {
     window.open("https://walink.co/5a8454", "_blank");

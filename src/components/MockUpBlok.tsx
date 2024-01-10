@@ -5,7 +5,8 @@ import ArrowLeft from './../../public/images/Arrow-Left-Light-Blue-Home.svg'
 import ArrowRight from './../../public/images/Arrow-Right-Light-Blue-Home.svg'
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
-
+import checkByN from '../../public/images/check-nyb.png'
+import videoMeLi from ''
 export interface MockupComponentProps {
   copete: string;
   title: string;
@@ -39,8 +40,8 @@ const MockUpBlok = () => {
 
   const MockupsData: MockupComponentProps[] = [
     {
-        copete: 'Aoki es...',
-        title: "Descrubrí todo lo que podes hacer con tu chatbot",
+        copete: 'Con Aoki...',
+        title: "Descrubrí todo lo que podes hacer<br/>con tu Chatbot",
         components: [
           {
             key: "1",
@@ -55,12 +56,43 @@ const MockUpBlok = () => {
             content: (
               <>
                 <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
-                <p>
-                  Sabemos que cada empresa es única. Por eso, nuestro software es
-                  altamente personalizable y se adapta a las necesidades específicas
-                  de tu negocio. Ya sea que estés en manufactura, logística, o
-                  cualquier otro sector, Aoki se adapta para maximizar tu potencial
-                </p>
+                <ul className='mockup-ul'>
+          
+                  <li className='flex flex-row items-center pt-4 pb-2' >
+                    <FaAngleRight/>
+                    <p>Disminuye tiempos</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                    <p>Maximiza tu produccion</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                  <p>Genera tú autogestión</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                  <p>Da respuestas en tiempo récord</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                  <p>Crea registros y estadísticas de tus interacciones</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                  <p>Centraliza tu logística y gestión</p>
+                  </li>
+                  <li className='flex flex-row items-center pb-2'>
+                  <FaAngleRight/>
+
+                  <p>Beneficia tú llegada a tú publico</p>
+                  </li>
+                </ul>
               </>
             ),
           },
@@ -72,60 +104,129 @@ const MockUpBlok = () => {
       },
       {
         copete: 'Aoki es...',
-        title: "Descrubrí todo lo que podes hacer con tu chatbot",
+        title: "Nuestro Chatbot Bota",
         components: [
           {
             key: "1",
             content: (
               <span className="font-semibold">
-                Experiencia del Usuario sin Precedentes
+                Con nuestro Multiagente no pierdas en tu flujo de atención ningún cliente <br/>
+                Todo tu servicio de atención al cliente a través de un único número de contacto <br/>
+                <span className='font-bold'>¿Cómo? Con BOTA</span>
               </span>
+              
             ),
           },
           {
             key: "2",
             content: (
-              <>
-                <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
-                <p>
-                  Sabemos que cada empresa es única. Por eso, nuestro software es
-                  altamente personalizable y se adapta a las necesidades específicas
-                  de tu negocio. Ya sea que estés en manufactura, logística, o
-                  cualquier otro sector, Aoki se adapta para maximizar tu potencial
-                </p>
-              </>
+              <ul className='mockup-ul'>
+          
+              <li className='flex flex-row items-center pt-4 pb-2' >
+                <FaAngleRight/>
+                <p>Todos tus asesores detrás de un mismo número</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+                <p>Asignaciones de clientes y conversaciones</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Conectalo con CROMO, nuestro Software CRM, para mayor gestión</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Envio de archivos multimedia</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Respuestas predeterminadas y manejo de Chatbots</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Roles de usuario agrupables</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Implementaciones con Mercado Libre, Instagram, Facebook, WhatsApp, etc</p>
+              </li>
+            </ul>
             ),
           },
         ],
         imageSrc: mockupImg,
-        imageAlt: "Descripción de la imagen",
+        imageAlt: "Video MeLi",
         direction: "textFirst",
         type: "png",
       },
       {
         copete: 'Aoki es...',
-        title: "Descrubrí todo lo que podes hacer con tu chatbot",
+        title: "Nuestro CRM CROMO",
         components: [
           {
             key: "1",
             content: (
               <span className="font-semibold">
-                Experiencia del Usuario sin Precedentes
+                Realizá las tareas de seguimiento y gestión de tus clientes con nuestro CRM
               </span>
             ),
           },
           {
             key: "2",
             content: (
-              <>
-                <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
-                <p>
-                  Sabemos que cada empresa es única. Por eso, nuestro software es
-                  altamente personalizable y se adapta a las necesidades específicas
-                  de tu negocio. Ya sea que estés en manufactura, logística, o
-                  cualquier otro sector, Aoki se adapta para maximizar tu potencial
-                </p>
-              </>
+              <ul className='mockup-ul'>
+          
+              <li className='flex flex-row items-center pt-4 pb-2' >
+                <FaAngleRight/>
+                <p>Crea registro de tus clientes</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+                <p>Envia mensajes masivos, programa y envía recordatorios</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Registra clientes, visitantes, empleados</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Optimiza los tiempos de búsqueda</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Crea seguimientos</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Determina estado de la conexión y lleva registro de tus gestiones</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Mantené una conexión eficaz con tus clientes teniendo toda la informacion a mano</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Estadísticas, filtros, búsquedas entre tus Seguimientos y Clientes</p>
+              </li>
+              <li className='flex flex-row items-center pb-2'>
+              <FaAngleRight/>
+
+              <p>Llevá tu agenda totalmente integrada a recordatorios y envios masivos para organizarte</p>
+              </li>
+            </ul>
             ),
           },
         ],
@@ -135,36 +236,63 @@ const MockUpBlok = () => {
         type: "png",
       },
       {
-        copete: 'Aoki es...',
-        title: "Descrubrí todo lo que podes hacer con tu chatbot",
+        copete: 'con Bota...',
+        title: "Manejá Mercado Libre desde tu WhatsApp",
         components: [
           {
             key: "1",
             content: (
               <span className="font-semibold">
-                Experiencia del Usuario sin Precedentes
+                Mejora tu reputación respondiendo en segundos con la ayuda de la IA, guarda respuestas predeterminada por usuario 
+                y lo más importante, responde desde cualquier lado y no pierdas ni una venta
               </span>
             ),
           },
           {
             key: "2",
             content: (
-              <>
-                <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
-                <p>
-                  Sabemos que cada empresa es única. Por eso, nuestro software es
-                  altamente personalizable y se adapta a las necesidades específicas
-                  de tu negocio. Ya sea que estés en manufactura, logística, o
-                  cualquier otro sector, Aoki se adapta para maximizar tu potencial
-                </p>
-              </>
+              <ul className='mockup-ul'>
+          
+              <li className='flex flex-row items-center pt-8 pb-4' >
+                <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+                <p>Varias cuentas de Mercado Libre en un solo lugar</p>
+              </li>
+              <li className='flex flex-row items-center pb-4'>
+              <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+                <p>Sabrás si un mensaje ya fue respondido y quién lo contestó</p>
+              </li>
+              <li className='flex flex-row items-center pb-4'>
+              <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+              <p>Inteligencia artificial para asistir al seller con la respuesta</p>
+              </li>
+  
+              
+            </ul>
             ),
           },
         ],
-        imageSrc: mockupImg,
+        imageSrc: 'video-meli',
         imageAlt: "Descripción de la imagen",
         direction: "textFirst",
-        type: "png",
+        type: "mp4",
       }
   ]
 
@@ -179,7 +307,7 @@ const MockUpBlok = () => {
       components={mockup.components.map((component) => (
         <div key={component.key}>{component.content}</div>
       ))}
-      imageSrc={mockup.imageSrc}
+      imageSrc={mockup.imageSrc === 'video-meli' ? '/static/videos/videoMeLi.mp4' : mockup.imageSrc}
       imageAlt={mockup.imageAlt}
       direction={mockup.direction}
       type={mockup.type}
