@@ -11,7 +11,7 @@ const SectionCTA = () => {
       </p>
       <div className="btn-container mt-6">
         <BtnCallToAction
-          text={"Empeza gratis hoy"}
+          text={"Empezá gratis hoy"}
           rocket={false}
           className={"w-60 text-white p-2 mb-2 btn-bg-color btn-section-cta"}
         />

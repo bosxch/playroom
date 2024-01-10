@@ -2,7 +2,10 @@
 import React, { ReactNode, useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
+import BtnCallToAction from "../BtnCTA";
+
 interface MockupComponentProps {
+  copete: string;
   title: string;
   components: ReactNode[];
   imageSrc: any; // Change the type to string if it's a path
@@ -12,6 +15,7 @@ interface MockupComponentProps {
 }
 
 const MockupComponent: React.FC<MockupComponentProps> = ({
+  copete,
   title,
   components,
   imageSrc,
@@ -29,6 +33,22 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   const [isVisible, setIsVisible] = useState(false);
   const videoRef = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
+
+  useEffect(() => {
+    console.log(windowWidth)
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
 
   const handleIntersection: IntersectionObserverCallback = (entries) => {
     entries.forEach((entry: IntersectionObserverEntry) => {
@@ -61,10 +81,11 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col text-white">
-          <h2 className="text-4xl font-bold mb-4">{title}</h2>
+          <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
+          <p className="text-4xl font-bold mb-4">{title}</p>
           {renderComponents()}
         </div>
-        <div className="flex justify-center items-center h-full">
+        <div className="flex flex-col justify-center items-center h-full w-full">
           { 
           type === 'png' ? <Image
             src={imageSrc}
@@ -73,20 +94,27 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
           />
         :
         <>
-        <div ref={videoRef} className="flex justify-center items-center h-full">
+        <div ref={videoRef} className="flex justify-center items-center h-full" style={{width: windowWidth < 700 ? '90vw' : ''}}>
         <ReactPlayer
           url={imageSrc}
           controls={false}
           playing={isVisible}
           muted={true}
           light={false}
+          loop={true}
           pip={true}
         />
       </div>
 
     <source src={imageSrc} type="video/mp4" /></>
         }
-        </div>
+ <BtnCallToAction
+                text={"Iniciá gratis hoy >>"}
+                rocket={false}
+                className={"w-100 text-white text-bold text-xl p-2 mb-2 mt-6 btn-bg-color"}
+                style={{ width: '100%' }}
+
+              />        </div>
       </div>
     );
   };
@@ -94,14 +122,22 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   const renderImageFirst = () => {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
+        <div className="flex flex-col justify-center items-center h-full w-full">
           <Image
             src={imageSrc}
             alt={imageAlt}
             className="w-full h-auto rounded-lg"
           />
-        </div>
+          <div className="w-full">
+ <BtnCallToAction
+                text={"Iniciá gratis hoy >>"}
+                rocket={false}
+                className={"w-full text-white text-bold text-xl p-2 mb-2 mt-6 btn-bg-color"}
+                style={{ width: '100%' }}
+              />
+        </div></div>
         <div className="flex flex-col text-white">
+        <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
           <h2 className="text-4xl font-bold mb-4">{title}</h2>
           {renderComponents()}
         </div>
@@ -111,11 +147,8 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   return (
     <div className="bg-transparent rounded-full pb-8 w-full" style={{padding:'3vw'}}>
-      <div className="bg-transparent rounded-xl w-100 big-screen">
-        {direction === "textFirst" ? renderTextFirst() : renderImageFirst()}
-      </div>
-      <div className="small-screen">
-        {renderTextFirst()}
+      <div className="bg-transparent rounded-xl w-100 ">
+        {direction === "textFirst" || windowWidth < 700 ? renderTextFirst() : renderImageFirst()}
       </div>
     </div>
   );

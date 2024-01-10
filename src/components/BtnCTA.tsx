@@ -1,30 +1,38 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 interface BtnCTAProps {
   text: string;
   rocket: boolean;
   className: string;
+  style?: React.CSSProperties; 
+  padding_nav?: React.CSSProperties
 }
 
 const BtnCallToAction: React.FC<BtnCTAProps> = ({
   text,
   rocket,
   className,
+  style,
+  padding_nav
 }) => {
   const handleClick = () => {
     window.open("https://walink.co/5a8454", "_blank");
   };
 
+
   return (
     <button
+
+      className={`btn-cta  transition-transform transform hover:scale-105 ${
+        className ? className : null
+      }`}
       style={{
         fontFamily: "basic-sans, sans-serif",
         justifyContent: "center",
+        ...style,
       }}
-      className={`btn-cta transition-transform transform hover:scale-105 ${
-        className ? className : null
-      }`}
       onClick={handleClick}
     >
       {rocket ? (
@@ -41,7 +49,15 @@ const BtnCallToAction: React.FC<BtnCTAProps> = ({
           ></path>
         </svg>
       ) : null}
-      <span>{text}</span>
+      <span style={{padding: text === 'REGISTRATE GRATIS' ? '0 .5rem' : ''}}> {text.includes(">>") ? (
+          <div className="flex flex-row items-center" >
+                      <p className="pr-2">{text.replace(">>", "")}</p>
+
+            <FaAngleDoubleRight />
+          </div>
+        ) : (
+          text
+        )}</span>
     </button>
   );
 };

@@ -3,6 +3,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 /* Your other styles */
+@import 'normalize.css';
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
@@ -22,6 +23,19 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /* <----------HOME STYLES----------> */
@@ -279,7 +293,7 @@ body {
   }
 
   .btn-nav-bar {
-    padding: 0.1vw 2vw !important
+    padding: 0.1vw 0 !important
   }
 
   .bg-line-video{
@@ -306,6 +320,9 @@ body {
     background-color: #73aed9;
   }
 
+  .btn-nav-bar-register{
+    padding: .5rem 0 !important;
+  }
   .btn-bg-color-login{
     background-color: #73aed9;
 
@@ -321,14 +338,15 @@ body {
     }
   }
 
-  .big-screen{
+  .big-screen {
     @media screen and (max-width: 700px) {
       display: none;
     }
   }
-
-  .small-screen{
-    @media screen and (min-width: 700px) {
+  
+  .small-screen {
+    @media screen and (min-width: 701px) {
       display: none;
     }
   }
+  

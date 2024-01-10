@@ -377,7 +377,7 @@ const NavBar = () => {
       {isDropdownOpenProducts ? (
         <div
           id="mega-menu-full-dropdown"
-          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full"
+          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full overflow-y-auto max-h-screen"
         >
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
@@ -451,7 +451,7 @@ const NavBar = () => {
       {isDropdownOpenSN ? (
         <div
           id="mega-menu-full-dropdown"
-          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full"
+          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full overflow-y-auto max-h-screen"
         >
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-1 md:px-6">
             <h2 className="text-2xl font-semibold mb-4">
@@ -604,7 +604,7 @@ const NavBar = () => {
       {isDropdownOpenNN ? (
         <div
           id="mega-menu-full-dropdown"
-          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full"
+          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full overflow-y-auto max-h-screen"
         >
           <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
@@ -690,7 +690,7 @@ const NavBar = () => {
       {isDropdownOpenMore ? (
         <div
           id="mega-menu-full-dropdown"
-          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full"
+          className="border-gray-200 shadow-sm navbar-bg absolute top-full left-0 w-full overflow-y-auto max-h-screen"
         >
           <div className="grid max-w-screen-xl px-4 py-2 mx-auto text-gray-900 dark:text-white">
             <div className="mb-2 mt-2">

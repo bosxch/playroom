@@ -10,6 +10,7 @@ const WhyComponent = () => {
       style={{ padding: "3vw" }}
     >
       <MockupComponent
+      copete=''
         title="¿Por qué un Chatbot?"
         components={[
           ,
