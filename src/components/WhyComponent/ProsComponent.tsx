@@ -31,25 +31,25 @@ const renderColumn = ({ title, strings, isBenef }: Props) => (
 );
 
 const ProsComponent = () => {
-  const cosasMalasProps: Props = {
-    title: "Sin Aoki",
+  const cosasMalasProps = {
+    title: "Antes de Aoki",
     strings: [
-      "Procesos Desarticulados",
-      "Toma de Decisiones Empírica",
-      "Adaptabilidad Limitada",
-      "Adquisición Ineficiente",
+      "Atención Descentralizada",
+      "Respuestas Manuales",
+      "Interacción Limitada",
+      "Difícil Seguimiento de Conversaciones",
       "Experiencia Usuario Básica",
     ],
     isBenef: false,
   };
 
-  const cosasBuenasProps: Props = {
-    title: "Con Aoki",
+  const cosasBuenasProps = {
+    title: "Después de Aoki",
     strings: [
-      "Procesos Integrados",
-      "Decisión IA Informada",
-      "Adaptabilidad Ágil",
-      "Adquisición Automatizada",
+      "Atención Centralizada con Chatbot",
+      "Respuestas Automáticas e Informadas por IA",
+      "Interacción Mejorada",
+      "Seguimiento Eficiente de Conversaciones",
       "Experiencia Usuario Revolucionaria",
     ],
     isBenef: true,
