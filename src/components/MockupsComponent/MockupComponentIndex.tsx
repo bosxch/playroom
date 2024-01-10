@@ -136,12 +136,36 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   const renderImageFirst = () => {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col justify-center items-center h-full w-full">
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            className="w-full h-auto rounded-lg"
-          />
+        <div className="flex flex-col justify-center items-center h-full w-full" style={{width: windowWidth < 700 ? '90vw' : '100%'}}>
+        {type === "png" ? (
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              className="w-full h-auto rounded-lg"
+            />
+          ) : (
+            <>
+              <div
+                ref={videoRef}
+                className="flex justify-center items-center h-full"
+                style={{ width: windowWidth < 700 ? "90vw" : "100%" }}
+              >
+                <ReactPlayer
+                  url={imageSrc}
+                  controls={false}
+                  playing={isVisible}
+                  height={'auto'}
+                  muted={true}
+                  light={false}
+                  loop={true}
+                  pip={true}
+                  width={'100%'}
+                />
+              </div>
+
+              <source src={imageSrc} type="video/mp4" />
+            </>
+          )}
           <div className="w-full">
             <BtnCallToAction
               text={"Iniciá gratis hoy >>"}

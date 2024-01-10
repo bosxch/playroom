@@ -166,6 +166,66 @@ const MockUpBlok = () => {
         type: "png",
       },
       {
+        copete: 'con Bota...',
+        title: "Manejá Mercado Libre desde tu WhatsApp",
+        components: [
+          {
+            key: "1",
+            content: (
+              <span className="font-semibold">
+                Mejora tu reputación respondiendo en segundos con la ayuda de la IA, guarda respuestas predeterminada por usuario 
+                y lo más importante, responde desde cualquier lado y no pierdas ni una venta
+              </span>
+            ),
+          },
+          {
+            key: "2",
+            content: (
+              <ul className='mockup-ul'>
+          
+              <li className='flex flex-row items-center pt-8 pb-4' >
+                <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+                <p>Varias cuentas de Mercado Libre en un solo lugar</p>
+              </li>
+              <li className='flex flex-row items-center pb-4'>
+              <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+                <p>Sabrás si un mensaje ya fue respondido y quién lo contestó</p>
+              </li>
+              <li className='flex flex-row items-center pb-4'>
+              <Image
+                   alt="check"
+                   height={30}
+                   width={30}
+                   className="mr-2"
+                src={checkByN}
+                />
+              <p>Inteligencia artificial para asistir al seller con la respuesta</p>
+              </li>
+  
+              
+            </ul>
+            ),
+          },
+        ],
+        imageSrc: 'video-meli',
+        imageAlt: "Descripción de la imagen",
+        direction: "imageFirst",
+        type: "mp4",
+      }
+,
+      {
         copete: 'Aoki es...',
         title: "Nuestro CRM CROMO",
         components: [
@@ -232,68 +292,9 @@ const MockUpBlok = () => {
         ],
         imageSrc: mockupImg,
         imageAlt: "Descripción de la imagen",
-        direction: "imageFirst",
+        direction: "textFirst",
         type: "png",
       },
-      {
-        copete: 'con Bota...',
-        title: "Manejá Mercado Libre desde tu WhatsApp",
-        components: [
-          {
-            key: "1",
-            content: (
-              <span className="font-semibold">
-                Mejora tu reputación respondiendo en segundos con la ayuda de la IA, guarda respuestas predeterminada por usuario 
-                y lo más importante, responde desde cualquier lado y no pierdas ni una venta
-              </span>
-            ),
-          },
-          {
-            key: "2",
-            content: (
-              <ul className='mockup-ul'>
-          
-              <li className='flex flex-row items-center pt-8 pb-4' >
-                <Image
-                   alt="check"
-                   height={30}
-                   width={30}
-                   className="mr-2"
-                src={checkByN}
-                />
-                <p>Varias cuentas de Mercado Libre en un solo lugar</p>
-              </li>
-              <li className='flex flex-row items-center pb-4'>
-              <Image
-                   alt="check"
-                   height={30}
-                   width={30}
-                   className="mr-2"
-                src={checkByN}
-                />
-                <p>Sabrás si un mensaje ya fue respondido y quién lo contestó</p>
-              </li>
-              <li className='flex flex-row items-center pb-4'>
-              <Image
-                   alt="check"
-                   height={30}
-                   width={30}
-                   className="mr-2"
-                src={checkByN}
-                />
-              <p>Inteligencia artificial para asistir al seller con la respuesta</p>
-              </li>
-  
-              
-            </ul>
-            ),
-          },
-        ],
-        imageSrc: 'video-meli',
-        imageAlt: "Descripción de la imagen",
-        direction: "textFirst",
-        type: "mp4",
-      }
   ]
 
 
