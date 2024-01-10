@@ -36,6 +36,8 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1024
   );
+  const boxShadowStyle =
+    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset";
 
   useEffect(() => {
     const handleResize = () => {
@@ -84,10 +86,10 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   }
   const renderTextFirst = () => {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <div className="flex flex-col text-white-body">
           <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
-          <p className="text-4xl font-bold mb-4">{aplyBR(title)}</p>
+          <p className="text-4xl font-bold mb-4 text-white-body">{aplyBR(title)}</p>
           {renderComponents()}
         </div>
         <div className="flex flex-col justify-center items-center h-full w-full" style={{width: windowWidth < 700 ? '90vw' : '100%'}}>
@@ -177,9 +179,9 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
             />
           </div>
         </div>
-        <div className="flex flex-col text-white">
+        <div className="flex flex-col text-white-body">
           <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
-          <h2 className="text-4xl font-bold mb-4">{aplyBR(title)}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white-body ">{aplyBR(title)}</h2>
           {renderComponents()}
         </div>
       </div>
@@ -188,10 +190,11 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   return (
     <div
-      className="bg-transparent rounded-full pb-8 w-full"
-      style={{ padding: "3vw" }}
+    className="bg-transparent rounded-3xl pb-8 w-full"
+      style={{ padding: "3vw", boxShadow: boxShadowStyle }}
+      
     >
-      <div className="bg-transparent rounded-xl w-100 ">
+      <div className="bg-transparent  w-100 ">
         {direction === "textFirst" || windowWidth < 700
           ? renderTextFirst()
           : renderImageFirst()}

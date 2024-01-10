@@ -3,7 +3,7 @@ import React from "react";
 import MockupComponent from "../MockupsComponent/MockupComponentIndex";
 import ProsComponent from "./ProsComponent";
 import mockupImg from "../../../public/images/captura-footer-bot.a.png";
-import checkImg from '../../../public/images/check.png'
+import checkImg from '../../../public/images/check-nyb.png'
 import Image from "next/image";
 const WhyComponent = () => {
   return (
@@ -39,15 +39,9 @@ const WhyComponent = () => {
             mejoramos la conexión con nuestros clientes, impulsando así el
             crecimiento y la satisfacción del cliente en la era digital.
           </div>,
-        ]}
-        imageSrc={'/static/videos/videoAuto.mp4'}
-        imageAlt="Descripción de la imagen"
-        direction="textFirst"
-        type="mp4"
-      />
-                <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-8 items-banner" style={{width: '100%'}}>
+            <div className="flex flex-col sm:flex-col justify-center items-start sm:space-x-2 pt-4 " style={{width: '100%'}}>
             <div
-              className="flex flex-row items-center text-white"
+              className="flex flex-row items-center text-white-body pb-4"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -60,7 +54,7 @@ const WhyComponent = () => {
               <p>Responde de manera inmediata las 24hs</p>
             </div>
             <div
-              className="flex flex-row items-center text-white"
+              className="flex flex-row items-center text-white-body pb-4"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -73,7 +67,7 @@ const WhyComponent = () => {
               <p>Tus clientes escriben a un sólo número</p>
             </div>
             <div
-              className="flex flex-row items-center text-white"
+              className="flex flex-row items-center text-white-body pb-4"
               style={{ marginLeft: 0 }}
             >
               <Image
@@ -86,6 +80,13 @@ const WhyComponent = () => {
               <p>Envía comprobantes, alertas y recordatorios automáticos</p>
             </div>
           </div>
+        ]}
+        imageSrc={'/static/videos/videoAuto.mp4'}
+        imageAlt="Descripción de la imagen"
+        direction="textFirst"
+        type="mp4"
+      />
+              
       <ProsComponent />
     </div>
   );

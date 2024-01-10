@@ -45,7 +45,7 @@ const MockUpBlok = () => {
           {
             key: "1",
             content: (
-              <span className="font-semibold">
+              <span className="font-semibold text-white-body">
                 Experiencia del Usuario sin Precedentes
               </span>
             ),
@@ -54,39 +54,39 @@ const MockUpBlok = () => {
             key: "2",
             content: (
               <>
-                <p className="font-bold text-xl">Adaptabilidad sin Límites</p>
+                <p className="font-bold text-xl text-white-body">Adaptabilidad sin Límites</p>
                 <ul className='mockup-ul'>
           
                   <li className='flex flex-row items-center pt-4 pb-2' >
                     <FaAngleRight/>
-                    <p>Disminuye tiempos</p>
+                    <p className="text-white-body">Disminuye tiempos</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                     <p>Maximiza tu produccion</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                   <p>Genera tú autogestión</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                   <p>Da respuestas en tiempo récord</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                   <p>Crea registros y estadísticas de tus interacciones</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                   <p>Centraliza tu logística y gestión</p>
                   </li>
-                  <li className='flex flex-row items-center pb-2'>
+                  <li className='flex flex-row items-center pb-2 text-white-body'>
                   <FaAngleRight/>
 
                   <p>Beneficia tú llegada a tú publico</p>
@@ -108,7 +108,7 @@ const MockUpBlok = () => {
           {
             key: "1",
             content: (
-              <span className="font-semibold">
+              <span className="font-semibold text-white-body">
                 Con nuestro Multiagente no pierdas en tu flujo de atención ningún cliente <br/>
                 Todo tu servicio de atención al cliente a través de un único número de contacto <br/>
                 <span className='font-bold'>¿Cómo? Con BOTA</span>
@@ -121,36 +121,36 @@ const MockUpBlok = () => {
             content: (
               <ul className='mockup-ul'>
           
-              <li className='flex flex-row items-center pt-4 pb-2' >
+              <li className='flex flex-row items-center pt-4 pb-2 text-white-body' >
                 <FaAngleRight/>
                 <p>Todos tus asesores detrás de un mismo número</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
                 <p>Asignaciones de clientes y conversaciones</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
               <p>Conectalo con CROMO, nuestro Software CRM, para mayor gestión</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
               <p>Envio de archivos multimedia</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
               <p>Respuestas predeterminadas y manejo de Chatbots</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
               <p>Roles de usuario agrupables</p>
               </li>
-              <li className='flex flex-row items-center pb-2'>
+              <li className='flex flex-row items-center pb-2 text-white-body'>
               <FaAngleRight/>
 
               <p>Implementaciones con Mercado Libre, Instagram, Facebook, WhatsApp, etc</p>
@@ -171,7 +171,7 @@ const MockUpBlok = () => {
           {
             key: "1",
             content: (
-              <span className="font-semibold">
+              <span className="font-semibold text-white-body">
                 Mejora tu reputación respondiendo en segundos con la ayuda de la IA, guarda respuestas predeterminada por usuario 
                 y lo más importante, responde desde cualquier lado y no pierdas ni una venta
               </span>
@@ -180,7 +180,7 @@ const MockUpBlok = () => {
           {
             key: "2",
             content: (
-              <ul className='mockup-ul'>
+              <ul className='mockup-ul text-white-body'>
           
               <li className='flex flex-row items-center pt-8 pb-4' >
                 <Image
@@ -231,7 +231,7 @@ const MockUpBlok = () => {
           {
             key: "1",
             content: (
-              <span className="font-semibold">
+              <span className="font-semibold text-white-body">
                 Realizá las tareas de seguimiento y gestión de tus clientes con nuestro CRM
               </span>
             ),
@@ -239,9 +239,9 @@ const MockUpBlok = () => {
           {
             key: "2",
             content: (
-              <ul className='mockup-ul'>
+              <ul className='mockup-ul text-white-body'>
           
-              <li className='flex flex-row items-center pt-4 pb-2' >
+              <li className='flex flex-row items-center pt-4 pb-2 ' >
                 <FaAngleRight/>
                 <p>Crea registro de tus clientes</p>
               </li>

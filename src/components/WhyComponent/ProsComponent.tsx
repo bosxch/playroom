@@ -11,7 +11,7 @@ interface Props {
 const renderColumn = ({ title, strings, isBenef }: Props) => (
   <div className="flex flex-col items-center pt-4">
     <div className="text-left container-items-pros">
-      <p className="font-bold text-white text-2xl mb-2 text-center md:text-left lg:text-left">
+      <p className="font-bold text-white text-2xl mb-2 text-center md:text-left lg:text-left ">
         {title}
       </p>
       {strings.map((text, index) => (
@@ -61,10 +61,10 @@ const ProsComponent = () => {
       style={{ padding: "3vw" }}
     >
       <div className="text-center mb-4">
-        <p className="font-bold text-4xl text-white">
+        <p className="font-bold text-4xl text-white-body ">
         <span className="gradient-text">Tu Asistente Virtual</span> es el <span className="gradient-text">futuro</span>  
         </p>
-        <p className="pb-2 pt-2 text-white text-sm">
+        <p className="pb-2 pt-2 text-white text-sm text-white-body">
           Si no compras bota tenes 9 años de mala suerte
         </p>
       </div>
