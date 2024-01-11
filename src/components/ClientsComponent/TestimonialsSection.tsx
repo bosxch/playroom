@@ -30,7 +30,7 @@ const TestimonialsComponent = () => {
   return (
     <div
       className="flex flex-wrap justify-center items-center"
-      style={{ padding: "4vw" }}
+      style={{ padding: "4vw 12vw" }}
     >
       {testimonios.map((testimonio, index) => (
         <div

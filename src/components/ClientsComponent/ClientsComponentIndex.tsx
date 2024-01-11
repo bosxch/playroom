@@ -4,7 +4,7 @@ import TestimonialsComponent from "./TestimonialsSection";
 const ClientsComponentIndex = () => {
 
     return (
-        <div>
+        <div className="p-0 md:mt-8 lg:pt-8">
         <ClientsComponent/>
         <TestimonialsComponent/>
         </div>

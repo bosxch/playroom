@@ -14,8 +14,8 @@ import { useEffect } from "react";
 
 const ClientsComponent = () => {
   return (
-    <div className="mb-2 mt-4 clients-ul" style={{ padding: "4vw" }}>
-      <p className="text-center font-bolder text-4xl text-white-body mb-8">
+    <div className="mb-2 mt-4 clients-ul" style={{ padding: "0 12vw" }}>
+      <p className="text-center font-bolder text-xl md:text-4xl lg:text-4xl text-white-body mb-8">
       Preferido por las marcas líderes
       </p>
 
