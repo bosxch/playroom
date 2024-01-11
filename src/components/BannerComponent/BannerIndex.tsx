@@ -14,7 +14,7 @@ const Banner = () => {
           <p className="text-white-body p-4 text-xl sm:text-2xl lg:text-4xl font-bold mb-4 font-poppins text-center w-full sm:text-center">
           ¿Necesitas <span className="gradient-text">automatizar la comunicacion</span> en tu empresa?
           </p>
-          <h1 className="text-white-body p-4 text-3xl sm:text-6xl lg:text-8xl font-bold  font-poppins text-center sm:text-center w-full">
+          <h1 className="text-white-body text-3xl sm:text-6xl lg:text-8xl font-bold  font-poppins text-center sm:text-center w-full">
           Potenciá tú <span className="gradient-text">Estrategia</span>  
             <br />
             con un <span className="gradient-text">Chatbot con IA</span>
@@ -85,12 +85,11 @@ const Banner = () => {
 
         {/* Texto visible solo en móviles */}
         <div className="w-full sm:w-1/2 md:w-1/2 p-4 sm:p-8 flex flex-col items-center justify-center animation-container-banner sm:hidden">
-          <p className="text-white-body text-lg sm:text-lg lg:text-lg font-bold font-poppins text-center w-full sm:text-left">
+          <p className="text-white-body text-sm pt-4 mt-2 sm:text-lg lg:text-lg font-bold font-poppins text-center w-full sm:text-left">
           Lográ que <span className="gradient-text">tus clientes</span> se <span className="gradient-text">autogestionen</span>
           </p>
 
           {/* <button className="w-60 text-white p-2 mb-2 mt-6 btn-bg-color">Empezá tu prueba gratuita</button> */}
-          <Video width="90vw" height="auto" className='video-banner'/>
           <div className="btn-container">
           <BtnCallToAction
                 text={"Inicia gratis hoy"}

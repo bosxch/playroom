@@ -98,7 +98,7 @@ li {
   height: 130vh;
   width: 100vw;
   @media screen and (max-width: 700px) {
-    height: 150vh;
+    height: 100vh;
     overflow: hidden;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -331,6 +331,9 @@ body {
   }
 
   .video-banner{
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
     padding: .5rem;
   }
 
@@ -382,4 +385,26 @@ body {
 
 .w-45 {
   width: 45%;
+}
+
+
+.bajada-banner{
+  @media screen and (max-width: 700px) {
+    font-size: smaller !important;
+  }
+}
+
+.befits-items-mobile{
+  @media screen and (max-width: 700px) {
+    width: 90vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.padding-mobile{
+  @media screen and (max-width: 700px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

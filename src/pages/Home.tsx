@@ -15,6 +15,7 @@ const Home = () => {
     <div className="relative flex flex-col items-center flex-1 w-full h-full overflow-y-auto banner-main-aoki overflow-x-hidden">
       <NavBar />
       <Banner />
+      <Video width="90vw" height="auto" className='video-banner'/>
       <Video />
       <BenefitsComponent />
 
@@ -25,7 +26,6 @@ const Home = () => {
       <MockUpBlok />
       <SectionCTA />
 
-      {/* <BentoComponentIndex /> */}
       <FAQComponent/>
       <Footer />
     </div>

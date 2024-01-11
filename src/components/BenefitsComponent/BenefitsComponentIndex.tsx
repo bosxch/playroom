@@ -32,7 +32,7 @@ const BenefitsComponent = () => {
 
   return (
     <div
-      className="benefits-container p-8 bg-transparent flex justify-center w-full"
+      className="benefits-container p-8 bg-transparent flex justify-center w-full padding-mobile"
       style={{ padding: "3vw" }}
     >
       <div className="benefits-displayer grid grid-cols-1 gap-6 md:grid-cols-5 md:gap-4 lg:grid-cols-5 lg:gap-4 w-75 md:w-full lg:w-full">

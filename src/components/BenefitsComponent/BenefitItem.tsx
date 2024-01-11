@@ -11,7 +11,7 @@ const BenefitItem: React.FC<BenefitItemProps> = ({ icon, title }) => {
 
   return (
     <div
-      className="bg-white p-4 rounded-lg h-100 flex-shrink-0 flex flex-col items-center justify-center whitespace-normal"
+      className="bg-white p-4 rounded-lg h-100 flex-shrink-0 flex flex-col items-center justify-center whitespace-normal befits-items-mobile"
       style={{ boxShadow: boxShadowStyle }}
     >
       <div className="benefit-icon mb-6">{icon}</div>
