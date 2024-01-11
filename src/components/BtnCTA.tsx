@@ -49,7 +49,7 @@ const BtnCallToAction: React.FC<BtnCTAProps> = ({
         </svg>
       ) : null}
       <span style={{padding: text === 'REGISTRATE GRATIS' ? '0 .5rem' : ''}}> {text.includes(">>") ? (
-          <div className="flex flex-row items-center" >
+          <div className="flex flex-row items-center transition-transform transform hover:scale-105" >
                       <p className="pr-2">{text.replace(">>", "")}</p>
 
             <FaAngleDoubleRight className='arrows-btn'/>
