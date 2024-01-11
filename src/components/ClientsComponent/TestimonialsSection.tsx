@@ -30,15 +30,15 @@ const TestimonialsComponent = () => {
   return (
     <div
       className="flex flex-wrap justify-center items-center"
-      style={{ padding: "3vw" }}
+      style={{ padding: "4vw" }}
     >
       {testimonios.map((testimonio, index) => (
         <div
           key={index}
-          className="w-full sm:w-1/2 md:w-1/3 p-4 transition-transform transform hover:scale-105"
+          className="w-full sm:w-1/2 md:w-1/3 p-2 transition-transform transform hover:scale-105"
           style={{ transition: "transform 0.3s ease-in-out" }}
         >
-          <div className="bg-white p-6 rounded-md" style={{boxShadow: boxShadowStyle}}>
+          <div className="bg-white p-6 rounded-md margin-mobile" style={{boxShadow: boxShadowStyle}}>
             <p
               className="text-lg text-center font-bold mb-2"
               style={{ color: "#0881a3" }}

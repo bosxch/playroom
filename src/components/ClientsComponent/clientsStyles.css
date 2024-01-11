@@ -46,7 +46,7 @@ body {
 .scroller {
   position: relative;
   overflow: hidden;
-  width: 94vw;
+  width: 90vw;
   background-color: white;
   border-radius: 0.5rem;
 }
@@ -70,5 +70,3 @@ body {
   filter: grayscale(100%);
   transition: filter 0.3s ease; /* Agrega una transición suave */
 }
-
-/* Elimina la sección que contiene :hover styles */

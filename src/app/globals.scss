@@ -411,8 +411,10 @@ body {
 }
 
 .padding-mockup-mobile{
+  @media screen and (max-width: 700px) {
+
   padding: 5vh 2vw 3vw 2vw !important;
-}
+  }}
 
 .pros-mobile{
   @media screen and (max-width: 700px) {
@@ -435,5 +437,75 @@ body {
 }
 
 .scroller-mobile{
+  @media screen and (max-width: 700px) {
+
   width: 90vw !important;
-}
+  }}
+
+.margin-mobile{
+  @media screen and (max-width: 700px) {
+
+  width: 90vw;
+  }}
+
+.font-mobile-title {
+  @media screen and (max-width: 700px) {
+
+  font-size: xx-large;
+  }}
+
+.font-mobile-bf-title {
+  @media screen and (max-width: 700px) {
+
+  font-size: larger;
+    line-height: normal;
+    margin-bottom: .5rem;
+  }}
+
+.font-mobile-copete {
+  @media screen and (max-width: 700px) {
+    
+    font-size: medium;
+}}
+
+.btn-cta-mobile-pre {
+  @media screen and (max-width: 700px) {
+
+  padding: .5rem !important;
+  width: auto;
+  }}
+
+.btn-text-mobile-pre {
+  @media screen and (max-width: 700px) {
+    font-size: small;
+}}
+
+.btn-text-mobile-pre span {
+  @media screen and (max-width: 700px) {
+    font-size: small;
+}}
+
+.margin-arrows{
+  @media screen and (max-width: 700px) {
+    padding-top: 3rem;
+  width: 80%;
+  }}
+  
+  .arows-no-padding{
+    @media screen and (max-width: 700px) {
+
+    padding-top: 0 !important;
+      }  }
+
+      .mockup-padding {
+        @media screen and (min-width: 700px) {
+
+        padding: 4vw;
+        padding-bottom: 0;
+      }}
+
+      .padding-mobile-pre{
+        @media screen and (max-width: 700px) {
+
+        padding-top: 5vh !important;
+              }      }

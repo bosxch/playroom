@@ -91,7 +91,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
           <p className="text-4xl font-bold mb-4 text-white-body">{aplyBR(title)}</p>
           {renderComponents()}
         </div>
-        <div className="flex flex-col justify-center items-center h-full w-full" style={{width: windowWidth < 700 ? '90vw' : '100%'}}>
+        <div className="flex flex-col justify-center items-center h-full w-full" style={{width: windowWidth < 700 ? '' : '100%'}}>
           {type === "png" ? (
             <Image
               src={imageSrc}
@@ -104,7 +104,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
               <div
                 ref={videoRef}
                 className="flex justify-center items-center h-full"
-                style={{ width: windowWidth < 700 ? "90vw" : "100%", borderRadius: '25px', overflow: 'hidden' }}
+                style={{ width: windowWidth < 700 ? "" : "100%", borderRadius: '25px', overflow: 'hidden' }}
               >
                 <ReactPlayer
                   url={imageSrc}
@@ -192,11 +192,11 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   return (
     <div
-    className="bg-white rounded-3xl pb-8 w-full padding-mockup-mobile"
-      style={{ padding: "3vw", boxShadow: boxShadowStyle, marginBottom: '4vh' }}
+    className="bg-white rounded-3xl pb-8 w-full padding-mockup-mobile "
+      style={{ padding: "4vw", boxShadow: boxShadowStyle, marginBottom: '4vh' }}
       
     >
-      <div className="bg-transparent  w-100 ">
+      <div className="bg-transparent  w-100  ">
         {direction === "textFirst" || windowWidth < 700
           ? renderTextFirst()
           : renderImageFirst()}

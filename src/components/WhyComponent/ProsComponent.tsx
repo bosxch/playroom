@@ -9,7 +9,7 @@ interface Props {
 }
 
 const renderColumn = ({ title, strings, isBenef }: Props) => (
-  <div className="flex flex-col items-center pt-4">
+  <div className="flex flex-col items-center p-4">
     <div className="text-left container-items-pros">
       <p className="font-bold text-white text-2xl mb-2 text-center md:text-left lg:text-left  pb-4">
         {title}
@@ -61,7 +61,6 @@ const ProsComponent = () => {
   return (
     <div
       className=" p-8 mt-8 w-full flex flex-col items-center padding-mobile"
-      style={{ padding: "3vw" }}
     >
       <div className="text-center mb-4">
         <p className="font-bold text-4xl text-white-body ">
@@ -72,7 +71,7 @@ const ProsComponent = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pros-container" >
-        <div className='bg-pros pros-mobile' style={{borderRadius: '25px', width: 'fitContent', padding: '0 3vw 0vw 3vw'}}>
+        <div className='bg-pros pros-mobile' style={{borderRadius: '25px', width: 'fitContent'}}>
         {renderColumn(cosasMalasProps)}
 
         </div>

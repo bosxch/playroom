@@ -8,8 +8,7 @@ import Image from "next/image";
 const WhyComponent = () => {
   return (
     <div
-      className="bg-transparent rounded-full w-full"
-      style={{ padding: "3vw" }}
+      className="bg-transparent rounded-full w-full margin-mobile mockup-padding"
     >
       <MockupComponent
       copete=''

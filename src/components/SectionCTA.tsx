@@ -11,7 +11,7 @@ const SectionCTA = ({ arrows }: Props)=> {
   return (
     <>
     { arrows ? (
-          <div className="flex w-1/3 pt-8 justify-between items-center">
+          <div className="flex w-1/3 justify-between items-center margin-arrows arows-no-padding">
           <FaAngleDown color=' #0881a3' className='font-bold text-6xl gradient-text'/>
           <FaAngleDown color=' #73aed9' className='font-bold text-4xl gradient-text'/>
           
@@ -23,7 +23,7 @@ const SectionCTA = ({ arrows }: Props)=> {
           </div>
           
     ) : null}
-<div className="p-8 w-full flex justify-center items-center flex-col text-center">
+<div className="p-8 w-full flex justify-center items-center flex-col text-center margin-mobile">
 
 <p className="pb-2 text-white-body">¿Estas listo para agilizar tu comunicacion?</p>
 <p className="font-bold text-4xl text-white-body">

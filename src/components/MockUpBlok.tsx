@@ -299,7 +299,7 @@ const MockUpBlok = () => {
 
 
   return (
-    <div className="bg-transparent rounded-full w-full" style={{ padding: "3vw" }}>
+    <div className="bg-transparent rounded-full w-full margin-mobile mockup-padding" >
       <SectionPreMockups/>
 {MockupsData.map((mockup, index) => (
   <React.Fragment key={index}>
