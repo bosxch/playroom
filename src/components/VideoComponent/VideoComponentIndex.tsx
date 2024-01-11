@@ -46,7 +46,7 @@ const Video: React.FC<VideoProps> = ({ width = "auto", height = "75vh", classNam
     <>
      {!shouldDisplayText && (
         
-        <p className={`flex justify-center align-center text-center bg-line-video text-white font-bold ${className}`} style={{alignItems: 'center', fontSize: 'small', width: '90vw', display: width === '90vw' ? '' : 'none'}}>
+        <p className={`flex justify-center align-center text-center bg-line-video text-white font-bold ${className}`} style={{alignItems: 'center', fontSize: 'x-small', width: '90vw', display: width === '90vw' ? '' : 'none'}}>
           <i style={{margin: '0 1rem'}}><FaRegCirclePlay fontSize={15}/></i>
           Somos Aoki, somos innovación, conocenos
         </p>
@@ -78,7 +78,9 @@ const Video: React.FC<VideoProps> = ({ width = "auto", height = "75vh", classNam
         </div>
 
       <source src='/static/videos/VIDEO-HOME-ABOUT.mp4' type="video/mp4" />
-    </div></div>
+    </div>
+    </div>
+
 
     </>
   );

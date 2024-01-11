@@ -20,11 +20,11 @@ const Home = () => {
       <BenefitsComponent />
 
       <WhyComponent />
-      <SectionCTA />
+      <SectionCTA arrows={false} />
       <ClientsComponentIndex />
 
       <MockUpBlok />
-      <SectionCTA />
+      <SectionCTA arrows={true}/>
 
       <FAQComponent/>
       <Footer />

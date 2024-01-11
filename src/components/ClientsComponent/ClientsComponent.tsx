@@ -14,13 +14,13 @@ import { useEffect } from "react";
 
 const ClientsComponent = () => {
   return (
-    <div className="mb-2 mt-4" style={{ padding: "3vw" }}>
+    <div className="mb-2 mt-4 clients-ul" style={{ padding: "3vw" }}>
       <p className="text-center font-bolder text-4xl text-white-body mb-8">
       Preferido por las marcas líderes
       </p>
 
-      <div className="scroller" data-speed="slow">
-        <ul className="tag-list scroller__inner">
+      <div className="scroller scroller-mobile" data-speed="slow">
+        <ul className="tag-list scroller__inner scroller-mobile">
           <li className="brand-logo">
             <Image src={oeschle} alt="oeschleLogo" width={120} height={120} />
           </li>
