@@ -97,13 +97,14 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
               src={imageSrc}
               alt={imageAlt}
               className="w-full h-auto rounded-lg"
+              style={{borderRadius: '25px', overflow: 'hidden'}}
             />
           ) : (
             <>
               <div
                 ref={videoRef}
                 className="flex justify-center items-center h-full"
-                style={{ width: windowWidth < 700 ? "90vw" : "100%" }}
+                style={{ width: windowWidth < 700 ? "90vw" : "100%", borderRadius: '25px', overflow: 'hidden' }}
               >
                 <ReactPlayer
                   url={imageSrc}
@@ -143,13 +144,15 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
               src={imageSrc}
               alt={imageAlt}
               className="w-full h-auto rounded-lg"
+              style={{borderRadius: '25px', overflow: 'hidden'}}
+
             />
           ) : (
             <>
               <div
                 ref={videoRef}
                 className="flex justify-center items-center h-full"
-                style={{ width: windowWidth < 700 ? "90vw" : "100%" }}
+                style={{ width: windowWidth < 700 ? "90vw" : "100%", borderRadius: '25px', overflow: 'hidden' }}
               >
                 <ReactPlayer
                   url={imageSrc}
