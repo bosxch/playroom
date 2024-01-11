@@ -28,7 +28,7 @@ const WhyComponent = () => {
             </p>
           </div>,
           <div key="1">
-            <p className="font-bold text-2xl mb-2">
+            <p className="font-bold text-2xl mb-2" style={{paddingTop: '1.5vh'}}>
               Nuestro Chatbot de última generación
             </p>
             <span className="font-semibold"></span> Un verdadero asistente

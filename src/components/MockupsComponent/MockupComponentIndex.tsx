@@ -86,7 +86,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   const renderTextFirst = () => {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
-        <div className="flex flex-col text-white-body">
+        <div className="flex flex-col text-white-body" style={{padding: '.5rem'}}>
           <p className="text-xl font-semi-bold text-sky ">{copete}</p>
           <p className="text-4xl font-bold mb-4 text-white-body">{aplyBR(title)}</p>
           {renderComponents()}
@@ -181,7 +181,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
             />
           </div>
         </div>
-        <div className="flex flex-col text-white-body">
+        <div className="flex flex-col text-white-body" style={{padding: '.5rem'}}>
           <p className="text-xl font-semi-bold text-sky ">{copete}</p>
           <h2 className="text-4xl font-bold mb-4 text-white-body ">{aplyBR(title)}</h2>
           {renderComponents()}
@@ -192,7 +192,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   return (
     <div
-    className="bg-white rounded-3xl pb-8 w-full"
+    className="bg-white rounded-3xl pb-8 w-full padding-mockup-mobile"
       style={{ padding: "3vw", boxShadow: boxShadowStyle }}
       
     >
