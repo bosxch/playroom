@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image"; // Importa la imagen de Next.js
 import BtnCallToAction from "../BtnCTA";
 import logo from "../../../public/images/logo-blanco.png";
+import iso from '../../../public/images/AOKI - isotipo blanco.png'
 const NavBar = () => {
   const [isDropdownOpenProducts, setDropdownOpenProducts] = useState(false);
   const [isDropdownOpenSN, setDropdownOpenSN] = useState(false);
@@ -18,6 +19,17 @@ const NavBar = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" 
+  );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWindowWidth(window.innerWidth > 1024)
+      if (windowWidth) return
+    }
+    if (!windowWidth) setWindowWidth(!windowWidth)
+  }, [windowWidth])
 
   const setAllFalse = () => {
     setDropdownOpenProducts(false);
@@ -111,14 +123,14 @@ const NavBar = () => {
   return (
     <nav
       className="navbar-bg sticky top-0 w-full z-2"
-      style={{ width: "100%", zIndex: 1000 }}
+      style={{ width: "100%", zIndex: 1000}}
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <a
           href="https://flowbite.com"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <Image src={logo} alt="Aoki Logo" width={100} height={100} />{" "}
+          <Image src={windowWidth ? logo : iso} alt="Aoki Logo" width={windowWidth ? 100 : 40} height={windowWidth ? 100 : 40} />{" "}
           {/* Utiliza la etiqueta Image de Next.js */}
         </a>
         <button
@@ -135,6 +147,7 @@ const NavBar = () => {
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
+            color="white"
             viewBox="0 0 17 14"
           >
             <path
@@ -177,7 +190,7 @@ const NavBar = () => {
                 </svg>
               </button>
             </li> */}
-            <li>
+            {/* <li>
               <button
                 id="dropdown-button-products"
                 style={{ color: isActiveProducts ? "active-dropdown" : "" }}
@@ -202,7 +215,7 @@ const NavBar = () => {
                   />
                 </svg>
               </button>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#"
@@ -292,7 +305,7 @@ const NavBar = () => {
               </svg>
             </button>
           </li> */}
-          <li>
+          {/* <li>
             <button
               id="dropdown-button-products"
               style={{ color: isActiveProducts ? "active-dropdown" : "" }}
@@ -317,7 +330,7 @@ const NavBar = () => {
                 />
               </svg>
             </button>
-          </li>
+          </li> */}
           <li>
             <a
               href="#"
@@ -357,14 +370,14 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
-                                            <li className="flex justify-center p-4">
+                                            <li className="flex justify-center p-4" style={{display: windowWidth ? '' : 'none'}}>
               <BtnCallToAction
                 rocket={false}
                 text="Iniciar Sesión"
                 className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color-login btn-bg-color btn-nav-bar btn-nav-bar-login"
               />
             </li>
-          <li className="flex justify-center p-4">
+          <li className="flex justify-center p-4" style={{display: windowWidth ? '' : 'none'}}>
             <BtnCallToAction
               rocket={false}
               text="REGISTRATE GRATIS"
