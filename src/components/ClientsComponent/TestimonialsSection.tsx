@@ -24,6 +24,8 @@ const TestimonialsComponent = () => {
         "Esta herramienta ha cambiado la forma en que abordamos los desafíos empresariales. Nos ha brindado insights valiosos y ha mejorado nuestra capacidad para adaptarnos rápidamente a un entorno comercial dinámico.",
     },
   ];
+  const boxShadowStyle =
+    "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
 
   return (
     <div
@@ -36,7 +38,7 @@ const TestimonialsComponent = () => {
           className="w-full sm:w-1/2 md:w-1/3 p-4 transition-transform transform hover:scale-105"
           style={{ transition: "transform 0.3s ease-in-out" }}
         >
-          <div className="bg-white shadow-md p-6 rounded-md">
+          <div className="bg-white p-6 rounded-md" style={{boxShadow: boxShadowStyle}}>
             <p
               className="text-lg text-center font-bold mb-2"
               style={{ color: "#0881a3" }}

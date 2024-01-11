@@ -52,7 +52,7 @@ const BtnCallToAction: React.FC<BtnCTAProps> = ({
           <div className="flex flex-row items-center" >
                       <p className="pr-2">{text.replace(">>", "")}</p>
 
-            <FaAngleDoubleRight />
+            <FaAngleDoubleRight className='arrows-btn'/>
           </div>
         ) : (
           text

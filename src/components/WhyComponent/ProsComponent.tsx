@@ -55,6 +55,9 @@ const ProsComponent = () => {
     isBenef: true,
   };
 
+  const boxShadowStyle =
+    "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+
   return (
     <div
       className=" p-8 mt-8 w-full flex flex-col items-center"
@@ -73,7 +76,7 @@ const ProsComponent = () => {
         {renderColumn(cosasMalasProps)}
 
         </div>
-        <div className='bg-pros' style={{borderRadius: "25px"}}>
+        <div className='bg-pros' style={{borderRadius: "25px", boxShadow: boxShadowStyle}}>
         {renderColumn(cosasBuenasProps)}
 
           </div>

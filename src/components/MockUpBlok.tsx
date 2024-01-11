@@ -6,6 +6,7 @@ import ArrowRight from './../../public/images/Arrow-Right-Light-Blue-Home.svg'
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa";
 import checkByN from '../../public/images/check-nyb.png'
+import SectionPreMockups from "./MockupsComponent/SectionPreMockups";
 export interface MockupComponentProps {
   copete: string;
   title: string;
@@ -299,6 +300,7 @@ const MockUpBlok = () => {
 
   return (
     <div className="bg-transparent rounded-full w-full" style={{ padding: "3vw" }}>
+      <SectionPreMockups/>
 {MockupsData.map((mockup, index) => (
   <React.Fragment key={index}>
     <MockupComponent

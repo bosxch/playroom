@@ -37,8 +37,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
     typeof window !== "undefined" ? window.innerWidth : 1024
   );
   const boxShadowStyle =
-    "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset";
-
+    "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -88,7 +87,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div className="flex flex-col text-white-body">
-          <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
+          <p className="text-xl font-semi-bold text-sky ">{copete}</p>
           <p className="text-4xl font-bold mb-4 text-white-body">{aplyBR(title)}</p>
           {renderComponents()}
         </div>
@@ -180,7 +179,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
           </div>
         </div>
         <div className="flex flex-col text-white-body">
-          <p className="text-xl font-semi-bold text-blue-200 ">{copete}</p>
+          <p className="text-xl font-semi-bold text-sky ">{copete}</p>
           <h2 className="text-4xl font-bold mb-4 text-white-body ">{aplyBR(title)}</h2>
           {renderComponents()}
         </div>
@@ -190,7 +189,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 
   return (
     <div
-    className="bg-transparent rounded-3xl pb-8 w-full"
+    className="bg-white rounded-3xl pb-8 w-full"
       style={{ padding: "3vw", boxShadow: boxShadowStyle }}
       
     >

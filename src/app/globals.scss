@@ -363,3 +363,22 @@ body {
     font-weight: bold;
   }
 
+.text-sky{
+  color: #73aed9;
+}
+
+.btn-cta .arrows-btn {
+  transition: transform 0.3s ease-in-out; /* Establece la transición para ambos estados */
+}
+
+.btn-cta:hover .arrows-btn {
+  transform: translateX(10px);
+}
+
+.btn-cta .arrows-btn {
+  transform: translateX(0); /* Vuelve a la posición original en el estado normal */
+}
+
+.w-45 {
+  width: 45%;
+}
