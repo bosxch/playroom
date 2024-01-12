@@ -192,7 +192,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
   return (
     <div
     className="bg-white rounded-3xl pb-8 w-full padding-mockup-mobile "
-      style={{ padding: "4vw", boxShadow: boxShadowStyle, marginBottom: '4vh' }}
+      style={{ padding: "2vw", boxShadow: boxShadowStyle, marginBottom: '4vh' }}
       
     >
       <div className="bg-transparent  w-100  ">

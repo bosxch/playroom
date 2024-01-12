@@ -28,14 +28,14 @@ const MockUpBlok = () => {
 
   const arrowStyleLeft = {
     position: 'absolute' as const,
-    left: '-50px',  
-    bottom: '-100px',
+    left: '-75px',  
+    bottom: '-75px',
   };
 
   const arrowStyleRight = {
     position: 'absolute' as const,
-    right: '-50px',  
-    bottom: '-100px',
+    right: '-75px',  
+    bottom: '-75px',
   };
 
   const MockupsData: MockupComponentProps[] = [
