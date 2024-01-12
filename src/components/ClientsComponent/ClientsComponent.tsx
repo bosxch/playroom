@@ -6,7 +6,7 @@ import aquasol from "../../../public/images/logos/aquasol 300-02.png";
 import distri from "../../../public/images/logos/distri 300-02.png";
 import eliggi from "../../../public/images/logos/eliggi 300-02.png";
 import facturante from "../../../public/images/logos/facturante 300-02.png";
-import gnik from "../../../public/images/logos/gnik 300-02T.png";
+import gnik from "../../../public/images/logos/gnik 300-02.png";
 import utn from "../../../public/images/logos/utn 300-02.png";
 import Image from "next/image";
 
