@@ -38,6 +38,16 @@ li {
   border: 0;
 }
 
+::-webkit-scrollbar{
+  background: whitesmoke;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #73aed9;
+  border-radius: 15px;
+  
+}
+
 /* <----------HOME STYLES----------> */
 
 .banner-main-aoki {
