@@ -42,10 +42,10 @@ const ClientsComponent = () => {
             />
           </li>
           <li className="brand-logo">
-            <Image src={gnik} alt="gnikLogo" width={120} height={120} />
+            <Image src={gnik} alt="gnikLogo" className="logo-clients-section"  />
           </li>
           <li className="brand-logo">
-            <Image src={utn} alt="utnLogo" width={120} height={120} />
+            <Image src={utn} alt="utnLogo" className="logo-clients-section"   />
           </li>
         </ul>
       </div>

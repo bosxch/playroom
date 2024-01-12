@@ -22,7 +22,7 @@ const SectionPreMockups = () => {
         Estás a solo 3 clicks de tu nuevo Chatbot
       </p>        
 
-      <div className="flex w-2/3 pt-8 justify-around items-center margin-mobile">
+      <div className="flex w-2/3 pt-8 justify-center items-center margin-mobile">
 
       <BtnCallToAction
           text={"Crear cuenta gratis"}

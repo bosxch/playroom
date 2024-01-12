@@ -10,10 +10,6 @@
   justify-content: space-around;
 }
 
-
-
-/* general styles */
-
 :root {
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-primary-100: hsl(205, 15%, 58%);
@@ -41,8 +37,6 @@ body {
   list-style: none;
 }
 
-/* Añade estos estilos al final de tu archivo clientsStyles.css */
-
 .scroller {
   position: relative;
   overflow: hidden;
@@ -58,9 +52,9 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: transparent; /* Color gris o el color de tu elección */
-  opacity: 0.7; /* Ajusta la opacidad según tus necesidades */
-  pointer-events: none; /* Permite interactuar con los elementos subyacentes */
+  background-color: transparent; 
+  opacity: 0.7; 
+  pointer-events: none; 
 }
 
 .scroller img {
@@ -68,5 +62,13 @@ body {
   max-width: 100%;
   height: auto;
   filter: grayscale(100%);
-  transition: filter 0.3s ease; /* Agrega una transición suave */
+  transition: filter 0.3s ease; 
+}
+
+.logo-clients-section{
+  width: 120px;
+  height: 120px;
+  @media screen and (min-width: 700px) {
+    width: 200px;
+  }
 }
