@@ -61,11 +61,11 @@ const FAQComponent = () => {
       {faqData.map((item, index) => (
         <div className="questions m-4 btn-bg-color rounded-md p-2" style={{marginLeft: 0, marginRight: 0}} key={index}>
           <div className="visible-pannel bg-transparent rounded-lg flex justify-between items-center" onClick={(e) => handleQuestionClick(e, index)}>
-            <p className="ml-4 text-sm" >{item.question}</p>
+            <p className="ml-4 text-sm mockup-text-responsive" >{item.question}</p>
             <p className=" w-6 text-4xl cursor-pointer">+</p>
           </div>
           <div className="toggle-pannel w-full h-0 p-0 opacity-0 overflow-hidden transition-all duration-200">
-            <p className='p-6 text-md' style={{paddingLeft:'0'}}>{item.answer}</p>
+            <p className='p-6 text-md mockup-text-responsive' style={{paddingLeft:'0'}}>{item.answer}</p>
           </div>
         </div>
       ))}

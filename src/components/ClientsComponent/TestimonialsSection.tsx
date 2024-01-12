@@ -57,7 +57,7 @@ const TestimonialsComponent = () => {
               />
             </div>
             <p
-              className="text-lg text-center font-bold pt-4"
+              className="text-lg text-center font-bold pt-4 title-testim-responsive"
               style={{ color: "#0881a3" }}
             >
               {testimonio.name}
@@ -70,7 +70,7 @@ const TestimonialsComponent = () => {
               />
             </div>
             <p
-              className="mb-4 text-center text-md"
+              className="mb-4 text-center text-md mockup-text-responsive"
               style={{ color: "#0881a3" }}
             >
               {testimonio.testimonio}

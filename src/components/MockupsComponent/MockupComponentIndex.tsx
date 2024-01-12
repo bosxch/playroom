@@ -25,7 +25,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
 }) => {
   const renderComponents = () => {
     return components.map((component, index) => (
-      <div key={index} className="mb-4">
+      <div key={index} className="mb-4 mockup-text-responsive">
         {component}
       </div>
     ));
@@ -87,7 +87,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <div className="flex flex-col text-white-body" style={{padding: '.5rem'}}>
           <p className="text-xl font-semi-bold text-sky ">{copete}</p>
-          <p className="text-4xl font-bold mb-4 text-white-body">{aplyBR(title)}</p>
+          <p className="text-4xl font-bold mb-4 text-white-body mockup-title-responsive">{aplyBR(title)}</p>
           {renderComponents()}
         </div>
         <div className="flex flex-col justify-center items-center h-full w-full" style={{width: windowWidth < 700 ? '' : '100%'}}>
@@ -182,7 +182,7 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
         </div>
         <div className="flex flex-col text-white-body" style={{padding: '.5rem'}}>
           <p className="text-xl font-semi-bold text-sky ">{copete}</p>
-          <h2 className="text-4xl font-bold mb-4 text-white-body ">{aplyBR(title)}</h2>
+          <p className="text-4xl font-bold mb-4 text-white-body mockup-title-responsive">{aplyBR(title)}</p>
           {renderComponents()}
         </div>
       </div>

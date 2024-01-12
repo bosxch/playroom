@@ -11,7 +11,7 @@ interface Props {
 const renderColumn = ({ title, strings, isBenef }: Props) => (
   <div className="flex flex-col items-center p-4">
     <div className="text-left container-items-pros">
-      <p className="font-bold text-white text-2xl mb-2 text-center md:text-left lg:text-left  pb-4">
+      <p className="font-bold text-white text-2xl mb-2 text-center md:text-left lg:text-left  pb-4 title-testim-responsive">
         {title}
       </p>
       {strings.map((text, index) => (
@@ -23,7 +23,7 @@ const renderColumn = ({ title, strings, isBenef }: Props) => (
               <IoCloseOutline color="#fe9c00" />
             )}
           </span>
-          <p className="text-white">{text}</p>
+          <p className="text-white mockup-text-responsive">{text}</p>
         </div>
       ))}
     </div>
