@@ -26,18 +26,18 @@ const WhyComponent = () => {
               servicio al cliente ágil y personalizado.
             </p>
           </div>,
-          <div key="1">
-            <p className="font-bold text-2xl mb-2" style={{paddingTop: '1.5vh'}}>
-              Nuestro Chatbot de última generación
-            </p>
-            <span className="font-semibold"></span> Un verdadero asistente
-            virtual, está diseñado para comprender y responder a las necesidades
-            de los usuarios, brindando una experiencia interactiva única.
-            Descubra cómo la implementación estratégica de la tecnología de
-            Chatbot de Aoki puede transformar la forma en que interactuamos y
-            mejoramos la conexión con nuestros clientes, impulsando así el
-            crecimiento y la satisfacción del cliente en la era digital.
-          </div>,
+          // <div key="1">
+          //   <p className="font-bold text-2xl mb-2" style={{paddingTop: '1.5vh'}}>
+          //     Nuestro Chatbot de última generación
+          //   </p>
+          //   <span className="font-semibold"></span> Un verdadero asistente
+          //   virtual, está diseñado para comprender y responder a las necesidades
+          //   de los usuarios, brindando una experiencia interactiva única.
+          //   Descubra cómo la implementación estratégica de la tecnología de
+          //   Chatbot de Aoki puede transformar la forma en que interactuamos y
+          //   mejoramos la conexión con nuestros clientes, impulsando así el
+          //   crecimiento y la satisfacción del cliente en la era digital.
+          // </div>,
             <div className="flex flex-col sm:flex-col justify-center items-start sm:space-x-2 pt-4 " style={{width: '100%'}}>
             <div
               className="flex flex-row items-center text-white-body pb-4"

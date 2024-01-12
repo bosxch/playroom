@@ -57,7 +57,6 @@ const MockupComponent: React.FC<MockupComponentProps> = ({
       setIsVisible(entry.isIntersecting);
     });
   };
-
   useEffect(() => {
     const options: IntersectionObserverInit = {
       root: null,

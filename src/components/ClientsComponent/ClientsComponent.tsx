@@ -10,8 +10,6 @@ import gnik from "../../../public/images/logos/gnik 300-02.png";
 import utn from "../../../public/images/logos/utn 300-02.png";
 import Image from "next/image";
 
-import { useEffect } from "react";
-
 const ClientsComponent = () => {
   return (
     <div className="mb-2 mt-4 clients-ul" style={{ padding: "0 12vw" }}>
@@ -39,13 +37,14 @@ const ClientsComponent = () => {
               alt="facturanteLogo"
               width={120}
               height={120}
+              
             />
           </li>
           <li className="brand-logo">
-            <Image src={gnik} alt="gnikLogo" className="logo-clients-section"  />
+            <Image src={gnik} alt="gnikLogo"  width={120} height={120}/>
           </li>
           <li className="brand-logo">
-            <Image src={utn} alt="utnLogo" className="logo-clients-section"   />
+            <Image src={utn} alt="utnLogo"    width={120} height={120}/>
           </li>
         </ul>
       </div>

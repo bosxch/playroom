@@ -92,7 +92,7 @@ const Banner = () => {
                 text={"Iniciá gratis hoy"}
                 rocket={false}
                 className={
-                  "w-60 text-white text-bold text-sm p-2 mb-2 mt-6 btn-bg-color "
+                  "w-60 text-white p-2 mt-6 btn-bg-color btn-section-cta "
                 }
               />
             </div>
