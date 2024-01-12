@@ -30,6 +30,7 @@ const BtnCallToAction: React.FC<BtnCTAProps> = ({
       style={{
         fontFamily: "basic-sans, sans-serif",
         justifyContent: "center",
+        alignItems: 'center',
         ...style,
       }}
       onClick={handleClick}

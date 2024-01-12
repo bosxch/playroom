@@ -22,17 +22,17 @@ const SectionPreMockups = () => {
         Estás a solo 3 clicks de tu nuevo Chatbot
       </p>        
 
-      <div className="flex w-1/3 pt-8 justify-between items-center margin-mobile">
+      <div className="flex w-2/3 pt-8 justify-around items-center margin-mobile">
 
       <BtnCallToAction
           text={"Crear cuenta gratis"}
           rocket={false}
-          className={"w-45 text-white p-2 mb-2 btn-bg-color btn-cta-mobile-pre btn-text-mobile-pre"}
+          className={"w-100 text-white p-2 btn-bg-color btn-cta-mobile-pre btn-text-mobile-pre"}
       />
             <BtnCallToAction
           text={"Hablar con un asesor"}
           rocket={false}
-          className={"w-45 text-white p-2 mb-2 btn-bg-color btn-cta-mobile-pre btn-text-mobile-pre"}
+          className={"w-100 text-white p-2 btn-bg-color btn-cta-mobile-pre btn-text-mobile-pre"}
       />
             </div>
 

@@ -169,7 +169,7 @@ html {
 }
 
 .bg-pros {
-  background-color: #0881a3;
+  background-color: #73aed9;
 
 }
 
@@ -216,21 +216,22 @@ button {
 .icon {
   width: 24px; // ajusta el ancho según sea necesario
   height: 24px; // ajusta la altura según sea necesario
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-items-pros {
   @media screen and (max-width: 700px) {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 
 .items-banner {
   display: flex;
   justify-content: space-evenly;
-  gap: 3em;
-  padding-bottom: 3rem;
-  width: 100vw;
+  padding: 3rem 0 2rem 0 ;
   @media screen and (max-width: 700px) {
     display: none;
   }
@@ -476,13 +477,18 @@ body {
   }}
 
 .btn-text-mobile-pre {
-  @media screen and (max-width: 700px) {
-    font-size: small;
-}}
+
+}
 
 .btn-text-mobile-pre span {
-  @media screen and (max-width: 700px) {
-    font-size: small;
+    font-size: 1rem;
+  @media screen and (max-width: 1600px) {
+    font-size: 1.2rem;
+  }
+    @media screen and (max-width: 700px) {
+    font-size: .8rem;
+  
+
 }}
 
 .margin-arrows{
@@ -511,3 +517,42 @@ body {
 
         padding-top: 5vh !important;
               }      }
+
+    .btns-banner-mobile {
+      @media screen and (min-width: 700px) {
+        display: none;
+      }
+    }
+
+    .image-testimonios{
+      width: 10vw;
+      height: 10vw;
+      border-radius: 10rem;
+      object-fit: cover;
+      @media screen and (max-width: 700px) {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 5rem;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .stars-section-clients{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+.btn-mobile-banner span{
+  font-size: medium;
+}
+
+.image-testimonios-logo{
+  width: 20vw;
+  height: auto;
+  @media screen and (min-width: 700px) {
+    width: 6vw;
+  }
+}

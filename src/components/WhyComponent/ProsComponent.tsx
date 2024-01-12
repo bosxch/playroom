@@ -34,11 +34,10 @@ const ProsComponent = () => {
   const cosasMalasProps = {
     title: "Antes de Aoki",
     strings: [
-      "Atención Descentralizada",
-      "Respuestas Manuales",
-      "Interacción Limitada",
-      "Difícil Seguimiento de Conversaciones",
-      "Experiencia Usuario Básica",
+      "Muchas pestañas abiertas",
+      "Se pierden chats de clientes",
+      "Largos tiempos de respuesta",
+      "Atención lenta",
     ],
     isBenef: false,
   };
@@ -46,39 +45,40 @@ const ProsComponent = () => {
   const cosasBuenasProps = {
     title: "Después de Aoki",
     strings: [
-      "Atención Centralizada con Chatbot",
-      "Respuestas Automáticas e Informadas por IA",
-      "Interacción Mejorada",
-      "Seguimiento Eficiente de Conversaciones",
-      "Experiencia Usuario Revolucionaria",
+      "Centralización de tareas",
+      "No te perdés ni un mensaje",
+      "Atención autmática al instante",
+      "Respuestas en 1 segundo",
     ],
     isBenef: true,
   };
 
-  const boxShadowStyle =
-    "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
+  const boxShadowStyle = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
 
   return (
-    <div
-      className=" p-8 mt-8 w-full flex flex-col items-center padding-mobile"
-    >
+    <div className=" p-8 mt-8 w-full flex flex-col items-center padding-mobile">
       <div className="text-center mb-4">
         <p className="font-bold text-4xl text-white-body ">
-        <span className="gradient-text">Tu Asistente Virtual</span> es el <span className="gradient-text">futuro</span>  
+          <span className="gradient-text">Tu Asistente Virtual</span> es el{" "}
+          <span className="gradient-text">futuro</span>
         </p>
         <p className="pb-2 pt-2 text-white text-sm text-white-body">
-          Si no compras bota tenes 9 años de mala suerte
+          Veamos sus ventajas
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pros-container" >
-        <div className='bg-pros pros-mobile' style={{borderRadius: '25px', width: 'fitContent'}}>
-        {renderColumn(cosasMalasProps)}
-
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 pros-container">
+        <div
+          className="bg-pros pros-mobile"
+          style={{ borderRadius: "25px", width: "fitContent" }}
+        >
+          {renderColumn(cosasMalasProps)}
         </div>
-        <div className='bg-pros' style={{borderRadius: "25px", boxShadow: boxShadowStyle}}>
-        {renderColumn(cosasBuenasProps)}
-
-          </div>
+        <div
+          className="bg-pros"
+          style={{ borderRadius: "25px", boxShadow: boxShadowStyle }}
+        >
+          {renderColumn(cosasBuenasProps)}
+        </div>
       </div>
     </div>
   );

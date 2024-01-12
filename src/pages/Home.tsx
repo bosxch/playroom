@@ -17,7 +17,7 @@ const Home = () => {
       <Banner />
       <Video width="90vw" height="auto" className='video-banner'/>
       <Video />
-      <BenefitsComponent />
+      {/* <BenefitsComponent /> */}
 
       <WhyComponent />
       <SectionCTA arrows={false} />

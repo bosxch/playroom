@@ -19,17 +19,6 @@ const NavBar = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" 
-  );
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setWindowWidth(window.innerWidth > 1024)
-      if (windowWidth) return
-    }
-    if (!windowWidth) setWindowWidth(!windowWidth)
-  }, [windowWidth])
 
   const setAllFalse = () => {
     setDropdownOpenProducts(false);
@@ -130,7 +119,8 @@ const NavBar = () => {
           href="https://flowbite.com"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <Image src={windowWidth ? logo : iso} alt="Aoki Logo" width={windowWidth ? 100 : 40} height={windowWidth ? 100 : 40} />{" "}
+          <Image src={iso} alt="Aoki Logo" width={40} height={40} className="video-banner"/>{" "}
+          <Image src={logo} alt="Aoki Logo" width={100} height={100} className='arrows-container' />
           {/* Utiliza la etiqueta Image de Next.js */}
         </a>
         <button
@@ -370,14 +360,14 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
-                                            <li className="flex justify-center p-4" style={{display: windowWidth ? '' : 'none'}}>
+                                            <li className="flex justify-center p-4 arrows-container">
               <BtnCallToAction
                 rocket={false}
                 text="Iniciar Sesión"
                 className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color-login btn-bg-color btn-nav-bar btn-nav-bar-login"
               />
             </li>
-          <li className="flex justify-center p-4" style={{display: windowWidth ? '' : 'none'}}>
+          <li className="flex justify-center p-4 arrows-container" >
             <BtnCallToAction
               rocket={false}
               text="REGISTRATE GRATIS"
