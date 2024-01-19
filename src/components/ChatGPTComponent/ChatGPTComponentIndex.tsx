@@ -60,30 +60,30 @@ const ChatGPTComponent = () => {
             placeholder="Escribe tu pregunta..."
             value={input.message}
             onChange={handleChange}
+            className='text-area-chatgpt'
             style={{
               minHeight: "200px",
               maxHeight: "200px",
               overflowY: "auto",
               resize: "none",
-              backgroundColor: "transparent", // Fondo transparente
-              color: "white", // Texto en blanco
+              backgroundColor: "transparent", 
+              color: "white",
             }}
-            required
+            
           ></textarea>
           <button
             onClick={handleSendClick}
             style={{
               marginTop: "1vw",
               padding: "1vw",
-              width: "calc(33.33% - 2vw)", // Ancho del 33.33% del ancho del viewport
-              color: "white",
+              width: "calc(33.33% - 2vw)", 
               border: "none",
               cursor: "pointer",
             }}
             disabled={loading || input.message.length === 0}
-            className="mb-4 btn-cta  transition-transform transform hover:scale-105 text-white p-2 mb-2 btn-bg-color "
+            className="mb-4 btn-cta  transition-transform transform hover:scale-105 text-white p-2 mb-2 btn-bg-color btn-chatgpt"
           >
-            Send
+            Preguntar
           </button>
         </div>
         <div className="w-full " style={{ padding: ".5rem" }}>

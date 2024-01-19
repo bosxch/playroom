@@ -11,13 +11,12 @@ import SectionCTA from "@/components/SectionCTA";
 import ClientsComponentIndex from "@/components/ClientsComponent/ClientsComponentIndex";
 import FAQComponent from "@/components/FAQComponent/FAQComponent";
 import ChatGPTComponent from "@/components/ChatGPTComponent/ChatGPTComponentIndex";
+import JoinUs from "@/components/JoinUsComponent/JoinUsComponentIndex";
 const Home = () => {
   return (
     <div className="relative flex flex-col items-center flex-1 w-full h-full overflow-y-auto banner-main-aoki overflow-x-hidden">
       <NavBar />
       <Banner />
-      <Video width="90vw" height="auto" className='video-banner'/>
-      <Video />
       {/* <BenefitsComponent /> */}
 
       <WhyComponent />
@@ -26,9 +25,12 @@ const Home = () => {
 
       <MockUpBlok />
       <SectionCTA arrows={true}/>
+      <Video width="90vw" height="auto" className='video-banner'/>
+      <Video />
 
       <FAQComponent/>
       <ChatGPTComponent/>
+      <JoinUs/>
       <Footer />
     </div>
   );
