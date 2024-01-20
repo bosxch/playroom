@@ -13,6 +13,8 @@ const Equipments = ({ item }: { item: GridItemInterface }) => {
         src={item.image ?? ""}
         alt="equipments"
         fill
+        loading="lazy"
+        placeholder="blur"
       />
       {/* Content */}
       <div className="relative z-20 w-full p-4 space-y-3 md:p-8">

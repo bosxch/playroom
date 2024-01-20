@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image"; // Importa la imagen de Next.js
 import BtnCallToAction from "../BtnCTA";
 import logo from "../../../public/images/logo-blanco.png";
-import iso from '../../../public/images/AOKI - isotipo blanco.png'
+import iso from "../../../public/images/AOKI - isotipo blanco.png";
 const NavBar = () => {
   const [isDropdownOpenProducts, setDropdownOpenProducts] = useState(false);
   const [isDropdownOpenSN, setDropdownOpenSN] = useState(false);
@@ -56,7 +56,6 @@ const NavBar = () => {
     setIsActiveMore(!isActiveMore);
   };
 
-  
   useEffect(() => {
     const handleColorChange = () => {
       const dropdownButtons = document.querySelectorAll(".li-item-text");
@@ -112,15 +111,31 @@ const NavBar = () => {
   return (
     <nav
       className="navbar-bg sticky top-0 w-full z-2"
-      style={{ width: "100%", zIndex: 1000}}
+      style={{ width: "100%", zIndex: 1000 }}
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <a
-          href="https://flowbite.com"
+          href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <Image src={iso} alt="Aoki Logo" width={40} height={40} className="video-banner"/>{" "}
-          <Image src={logo} alt="Aoki Logo" width={100} height={100} className='arrows-container' />
+          <Image
+            src={iso}
+            alt="Aoki Logo"
+            width={40}
+            height={40}
+            className="video-banner"
+            loading="lazy"
+            placeholder="blur"
+          />{" "}
+          <Image
+            src={logo}
+            alt="Aoki Logo"
+            width={100}
+            height={100}
+            className="arrows-container"
+            loading="lazy"
+            placeholder="blur"
+          />
           {/* Utiliza la etiqueta Image de Next.js */}
         </a>
         <button
@@ -245,7 +260,7 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
-                            <li>
+            <li>
               <BtnCallToAction
                 rocket={false}
                 text="Iniciar Sesión"
@@ -360,14 +375,14 @@ const NavBar = () => {
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
   </svg></button>
                 </li> */}
-                                            <li className="flex justify-center p-4 arrows-container">
-              <BtnCallToAction
-                rocket={false}
-                text="Iniciar Sesión"
-                className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color-login btn-bg-color btn-nav-bar btn-nav-bar-login"
-              />
-            </li>
-          <li className="flex justify-center p-4 arrows-container" >
+          <li className="flex justify-center p-4 arrows-container">
+            <BtnCallToAction
+              rocket={false}
+              text="Iniciar Sesión"
+              className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color-login btn-bg-color btn-nav-bar btn-nav-bar-login"
+            />
+          </li>
+          <li className="flex justify-center p-4 arrows-container">
             <BtnCallToAction
               rocket={false}
               text="REGISTRATE GRATIS"
@@ -428,7 +443,9 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold text-white">Carga de Facturas Ficha</div>
+                  <div className="font-semibold text-white">
+                    Carga de Facturas Ficha
+                  </div>
                   <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                     Carga el PDF en tu sistema sin tipear todos los códigos y
                     cantidades, y compara precios.
@@ -484,7 +501,9 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Síguenos en Twitter</div>
+                      <div className="font-semibold text-white">
+                        Síguenos en Twitter
+                      </div>
                       <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Entérate de las últimas noticias y actualizaciones.
                       </span>
@@ -515,7 +534,9 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Síguenos en Facebook</div>
+                      <div className="font-semibold text-white">
+                        Síguenos en Facebook
+                      </div>
                       <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Conéctate con nuestra comunidad y comparte experiencias.
                       </span>
@@ -552,7 +573,9 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Síguenos en LinkedIn</div>
+                      <div className="font-semibold text-white">
+                        Síguenos en LinkedIn
+                      </div>
                       <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Conéctate con profesionales y descubre oportunidades.
                       </span>
@@ -589,7 +612,9 @@ const NavBar = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="font-semibold text-white">Síguenos en Instagram</div>
+                      <div className="font-semibold text-white">
+                        Síguenos en Instagram
+                      </div>
                       <span className="text-sm text-gray-500 dark:text-gray-400 text-white">
                         Explora nuestro mundo visual y comparte momentos
                         especiales.
@@ -655,7 +680,9 @@ const NavBar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold text-white">Carga de Facturas Ficha</div>
+                  <div className="font-semibold text-white">
+                    Carga de Facturas Ficha
+                  </div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Carga el PDF en tu sistema sin tipear todos los códigos y
                     cantidades, y compara precios.

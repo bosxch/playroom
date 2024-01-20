@@ -31,7 +31,14 @@ const Footer = () => {
         </div>
 
         <div className="w-full md:w-1/3 flex justify-end items-center">
-          <Image src={logo} alt="Logo" width={200} height={200} />
+          <Image
+            src={logo}
+            alt="Logo"
+            width={200}
+            height={200}
+            loading="lazy"
+            placeholder="blur"
+          />
         </div>
       </div>
     </footer>

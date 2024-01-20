@@ -14,22 +14,50 @@ const ClientsComponent = () => {
   return (
     <div className="mb-2 mt-4 clients-ul" style={{ padding: "0 12vw" }}>
       <p className="text-center font-bolder text-xl md:text-4xl lg:text-4xl text-white-body mb-8">
-      Preferido por las marcas líderes
+        Preferido por las marcas líderes
       </p>
 
       <div className="scroller scroller-mobile" data-speed="slow">
-        <ul className="tag-list scroller__inner scroller-mobile" >
+        <ul className="tag-list scroller__inner scroller-mobile">
           <li className="brand-logo">
-            <Image src={oeschle} alt="oeschleLogo" width={120} height={120} />
+            <Image
+              src={oeschle}
+              alt="oeschleLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
           <li className="brand-logo">
-            <Image src={aquasol} alt="aquasolLogo" width={120} height={120} />
+            <Image
+              src={aquasol}
+              alt="aquasolLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
           <li className="brand-logo">
-            <Image src={distri} alt="distriLogo" width={120} height={120} />
+            <Image
+              src={distri}
+              alt="distriLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
           <li className="brand-logo">
-            <Image src={eliggi} alt="eliggiLogo" width={120} height={120} />
+            <Image
+              src={eliggi}
+              alt="eliggiLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
           <li className="brand-logo">
             <Image
@@ -37,14 +65,27 @@ const ClientsComponent = () => {
               alt="facturanteLogo"
               width={120}
               height={120}
-              
             />
           </li>
           <li className="brand-logo">
-            <Image src={gnik} alt="gnikLogo"  width={120} height={120}/>
+            <Image
+              src={gnik}
+              alt="gnikLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
           <li className="brand-logo">
-            <Image src={utn} alt="utnLogo"    width={120} height={120}/>
+            <Image
+              src={utn}
+              alt="utnLogo"
+              width={120}
+              height={120}
+              loading="lazy"
+              placeholder="blur"
+            />
           </li>
         </ul>
       </div>

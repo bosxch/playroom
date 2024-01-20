@@ -56,6 +56,8 @@ const Banner = () => {
                   height={30}
                   width={30}
                   className="mr-2"
+                  loading="lazy"
+                  placeholder="blur"
                 />
                 <p>Disminuye tiempos de espera</p>
               </div>
@@ -68,6 +70,8 @@ const Banner = () => {
                   alt="check"
                   height={30}
                   width={30}
+                  loading="lazy"
+                  placeholder="blur"
                   className="mr-2"
                 />
                 <p>Mejora la experiencia de tus usuarios</p>
@@ -82,6 +86,8 @@ const Banner = () => {
                   height={30}
                   width={30}
                   className="mr-2"
+                  loading="lazy"
+                  placeholder="blur"
                 />
                 <p>Utiliza la IA para agilizarte</p>
               </div>

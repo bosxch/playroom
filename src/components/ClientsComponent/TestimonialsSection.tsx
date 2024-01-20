@@ -4,9 +4,9 @@ import M2 from "../../../public/images/logos/testimonio-M (2).jpg";
 import H1 from "../../../public/images/logos/testimonio-H.jpg";
 import Image from "next/image";
 
-import distriLogo from '../../../public/images/logos/distri 300-02.png'
-import factuLogo from '../../../public/images/logos/facturante 300-02.png'
-import utnLogo from '../../../public/images/logos/utn 300-02.png'
+import distriLogo from "../../../public/images/logos/distri 300-02.png";
+import factuLogo from "../../../public/images/logos/facturante 300-02.png";
+import utnLogo from "../../../public/images/logos/utn 300-02.png";
 
 const TestimonialsComponent = () => {
   const testimonios = [
@@ -54,6 +54,8 @@ const TestimonialsComponent = () => {
                 src={testimonio.image}
                 alt="Client Image"
                 className="image-testimonios"
+                loading="lazy"
+                placeholder="blur"
               />
             </div>
             <p
@@ -67,6 +69,8 @@ const TestimonialsComponent = () => {
                 src={testimonio.company}
                 alt="Client Logo Company Image"
                 className="image-testimonios-logo"
+                loading="lazy"
+                placeholder="blur"
               />
             </div>
             <p
