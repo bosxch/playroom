@@ -1,12 +1,22 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import { TiDeleteOutline } from "react-icons/ti";
 import { FaPaperclip } from "react-icons/fa6";
 import { AiFillLike } from "react-icons/ai";
 import { FaExclamation } from "react-icons/fa";
 import { emailBU } from "./axios.config";
+
+interface FormData {
+  name: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  message: string;
+  cv: File | null; // Assuming cv is of type File
+}
+
 const JoinUs = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     lastName: "",
     email: "",
@@ -112,6 +122,15 @@ const JoinUs = () => {
     });
   }, [formData]);
 
+  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -130,7 +149,7 @@ const JoinUs = () => {
       if (formData.cv !== null) {
         formDataToSend.append("file", formData.cv);
       }
-  
+
       const response = await emailBU.post("/api/email/send", formDataToSend);
 
       if (response.data.ok) {
@@ -165,153 +184,163 @@ const JoinUs = () => {
     setIsLoading(false);
   };
 
-  const boxShadowStyle =
-  "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
-
+  const boxShadowStyle = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
 
   return (
-    <div className='w-full mockup-padding my-8'>
-            <p className="text-center py-8 text-6xl text-white-body"       >Unite al Equipo</p>
+    <div className="w-full mockup-padding my-8">
+      <p className="text-center py-8 text-6xl text-white-body">
+        Unite al Equipo
+      </p>
 
-      <div className='bg-white rounded-3xl p-4 w-full padding-mockup-mobile' style={{boxShadow: boxShadowStyle}}>
-                  <form onSubmit={handleSubmit} className='w-full'>
-              <div className="flex flex-row">
-                <div className="w-full m-2">
+      <div
+        className="bg-white rounded-3xl p-4 w-full padding-mockup-mobile"
+        style={{ boxShadow: boxShadowStyle }}
+      >
+        <form onSubmit={handleSubmit} className="w-full">
+          <div className="flex flex-row">
+            <div className="w-full m-2">
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                className="w-full rounded-md p-2 input-join"
+                style={{ color: "#73aed9", backgroundColor: "transparent" }}
+                required
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full m-2">
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Apellido"
+                className="w-full rounded-md p-2 input-join"
+                required
+                style={{ color: "#73aed9" }}
+                value={formData.lastName}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+          <div className="flex flex-row">
+            <div className="w-full m-2">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="w-full rounded-md p-2 input-join"
+                required
+                style={{ color: "#73aed9" }}
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </div>
+            <div className="w-full m-2">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Teléfono"
+                className="w-full rounded-md p-2 input-join"
+                required
+                style={{ color: "#73aed9" }}
+                value={formData.phone}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+          <div className="flex flex-row m-2">
+            <div className="w-full">
+              <textarea
+                name="message"
+                placeholder="Mensaje"
+                className="w-full rounded-md p-2 input-join msg-heigth"
+                value={formData.message}
+                onChange={handleTextareaChange}
+                style={{ color: "#73aed9" }}
+              ></textarea>
+              <div
+                className="submite-btn file-container mt-4"
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <div
+                  className="file-container"
+                  style={{ display: "flex", flexDirection: "row" }}
+                >
                   <input
-                    type="text"
-                    name="name"
-                    placeholder="Nombre"
-                    className="w-full rounded-md p-2 input-join"
-                    style={{color: '#73aed9', backgroundColor: 'transparent'}}
-                    required
-                    value={formData.name}
-                    onChange={handleInputChange}
+                    type="file"
+                    id="inputarchivo"
+                    name="cv"
+                    accept=".pdf"
+                    onChange={handleFileChange}
+                    style={{ display: "none" }}
                   />
-                </div>
-                <div className="w-full m-2">
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Apellido"
-                    className="w-full rounded-md p-2 input-join"
-                    required
-                    style={{color: '#73aed9'}}
-                    value={formData.lastName}
-                    onChange={handleInputChange}
-                  />
-                </div>
-              </div>
-              <div className="flex flex-row">
-                <div className="w-full m-2">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className="w-full rounded-md p-2 input-join"
-                    required
-                    style={{color: '#73aed9'}}
-                    value={formData.email}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="w-full m-2">
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Teléfono"
-                    className="w-full rounded-md p-2 input-join"
-                    required
-                    style={{color: '#73aed9'}}
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                  />
-                </div>
-              </div>
-              <div className="flex flex-row m-2">
-                <div className="w-full">
-                  <textarea
-                    name="message"
-                    placeholder="Mensaje"
-                    className="w-full rounded-md p-2 input-join msg-heigth"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    style={{color: '#73aed9'}}
-                  ></textarea>
-                  <div
-                    className="submite-btn file-container mt-4"
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                  <button
+                    type="button"
+                    className="btn-mobile-file"
+                    style={{ backgroundColor: "#fe9c00", color: "white" }}
+                    onClick={() => {
+                      const inputArchivo =
+                        document.getElementById("inputarchivo");
+
+                      if (inputArchivo) {
+                        inputArchivo.click();
+                      }
+                    }}
                   >
-                    <div
-                      className="file-container"
-                      style={{ display: "flex", flexDirection: "row" }}
-                    >
-                      <input
-                        type="file"
-                        id="inputarchivo"
-                        name="cv"
-                        accept=".pdf"
-                        onChange={handleFileChange}
-                        style={{ display: "none" }}
-                      />
-                      <button
-                        type="button"
-                        className="btn-mobile-file"
-                        style={{ backgroundColor: "#fe9c00", color: "white" }}
-                        onClick={() =>
-                          typeof window !== "undefined" &&
-                          document.getElementById("inputarchivo").click()
-                        }
-                      >
-                        <FaPaperclip style={{ transform: "rotate(180deg)" }} />
-                        Selecciona un archivo
-                      </button>
-                      {formData.cv && showFileName && (
-                        <div
-                          style={{
-                            marginLeft: "10px",
-                            display: "flex",
-                            alignItems: "center",
-                            cursor: "pointer",
-                          }}
-                          className="file-join text-sky"
-                        >
-                          <span onClick={downloadFile}>
-                            {truncateFileName(formData.cv.name, 25)}
-                          </span>
+                    <FaPaperclip style={{ transform: "rotate(180deg)" }} />
+                    Selecciona un archivo
+                  </button>
 
-                          <TiDeleteOutline
-                            style={{
-                              height: "30px",
-                              width: "30px",
-                              color: "#fe9c00",
-                              borderRadius: "25px",
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                              marginLeft: "15px",
-                              cursor: "pointer",
-                            }}
-                            onClick={handleFileRemove}
-                          />
-                        </div>
-                      )}
-                    </div>
-                    <button
-                      type="submit"
-                      disabled={!isFormValid}
-                      className="btn-mobile-file btn-send-join"
+                  {formData.cv && showFileName && (
+                    <div
+                      style={{
+                        marginLeft: "10px",
+                        display: "flex",
+                        alignItems: "center",
+                        cursor: "pointer",
+                      }}
+                      className="file-join text-sky"
                     >
-                      {isLoading && <div className="loader"></div>}
-                      {isSuccess && <AiFillLike className="success-icon" />}
-                      {isErrored && <FaExclamation className="error-icon" />}
-                      {!isLoading && !isSuccess && !isErrored && "Enviar"}
-                    </button>
-                  </div>
+                      <span onClick={downloadFile}>
+                        {formData.cv.name
+                          ? truncateFileName(formData.cv.name, 25)
+                          : `Documento-Sin-Título`}
+                      </span>
+                      <TiDeleteOutline
+                        style={{
+                          height: "30px",
+                          width: "30px",
+                          color: "#fe9c00",
+                          borderRadius: "25px",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          marginLeft: "15px",
+                          cursor: "pointer",
+                        }}
+                        onClick={handleFileRemove}
+                      />
+                    </div>
+                  )}
                 </div>
+                <button
+                  type="submit"
+                  disabled={!isFormValid}
+                  className="btn-mobile-file btn-send-join"
+                >
+                  {isLoading && <div className="loader"></div>}
+                  {isSuccess && <AiFillLike className="success-icon" />}
+                  {isErrored && <FaExclamation className="error-icon" />}
+                  {!isLoading && !isSuccess && !isErrored && "Enviar"}
+                </button>
               </div>
-            </form>
-    </div></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   );
-}
+};
 
 export default JoinUs;
