@@ -402,7 +402,7 @@ const NavBar = () => {
             <ul>
               <li>
                 <a
-                  href="#"
+                  href="/productos/bota"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">ChatBot Bota</div>
@@ -415,7 +415,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/productos/cromo"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">CRM Cromo</div>
@@ -456,7 +456,7 @@ const NavBar = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="/productos/aoki-one"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">Robot Aoki ONE</div>
@@ -514,7 +514,8 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/aokitecno"
+                  target="_blank"
                   className="block p-4 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="flex items-center">
@@ -547,7 +548,8 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/aoki-tech/"
+                  target="_blank"
                   className="block p-4 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="flex items-center">
@@ -586,7 +588,8 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/aoki.tech/"
+                  target="_blank"   
                   className="block p-4 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="flex items-center">
@@ -639,7 +642,7 @@ const NavBar = () => {
             <ul>
               <li>
                 <a
-                  href="#"
+                  href="/productos/bota"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">ChatBot Bota</div>
@@ -652,7 +655,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/productos/cromo"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">CRM Cromo</div>
@@ -705,7 +708,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/productos/aoki-one"
                   className="block p-3 rounded-lg hover:navbar-bg dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold text-white">Robot Aoki ONE</div>
