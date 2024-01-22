@@ -195,7 +195,7 @@ const NavBar = () => {
                 </svg>
               </button>
             </li> */}
-            {/* <li>
+            <li>
               <button
                 id="dropdown-button-products"
                 style={{ color: isActiveProducts ? "active-dropdown" : "" }}
@@ -220,7 +220,7 @@ const NavBar = () => {
                   />
                 </svg>
               </button>
-            </li> */}
+            </li>
             <li>
               <a
                 href="#"
@@ -261,17 +261,18 @@ const NavBar = () => {
   </svg></button>
                 </li> */}
             <li>
-              <BtnCallToAction
-                rocket={false}
-                text="Iniciar Sesión"
-                className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar-login"
-              />
-            </li>
-            <li>
-              <BtnCallToAction
+            <BtnCallToAction
                 rocket={false}
                 text="REGISTRATE GRATIS"
                 className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar"
+              />
+            </li>
+            <li>
+
+               <BtnCallToAction
+                rocket={false}
+                text="Iniciar Sesión"
+                className="block  py-2 px-3 text-gray-900 rounded  md:p-0 dark:text-white w-60 text-white pl-4 pr-4  btn-bg-color btn-nav-bar-login"
               />
             </li>
           </ul>
@@ -310,7 +311,7 @@ const NavBar = () => {
               </svg>
             </button>
           </li> */}
-          {/* <li>
+          <li>
             <button
               id="dropdown-button-products"
               style={{ color: isActiveProducts ? "active-dropdown" : "" }}
@@ -335,7 +336,7 @@ const NavBar = () => {
                 />
               </svg>
             </button>
-          </li> */}
+          </li>
           <li>
             <a
               href="#"

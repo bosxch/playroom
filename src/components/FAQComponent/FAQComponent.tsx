@@ -56,7 +56,7 @@ const FAQComponent = () => {
   
   
   return (
-    <div className="container-faq p-8 w-full mt-8" style={{padding: '3vw'}}>
+    <div className="container-faq p-8 w-full mt-8 mockup-padding" >
       <h1 className="text-center py-8 text-6xl text-white-body">Preguntas frecuentes</h1>
       {faqData.map((item, index) => (
         <div className="questions m-4 btn-bg-color rounded-md p-2" style={{marginLeft: 0, marginRight: 0}} key={index}>

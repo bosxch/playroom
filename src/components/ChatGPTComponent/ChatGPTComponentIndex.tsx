@@ -32,7 +32,7 @@ const ChatGPTComponent = () => {
   };
 
   return (
-    <div className="w-full" style={{ padding: "3vw" }}>
+    <div className="w-full mockup-padding" >
       <p className="text-center py-8 text-6xl text-white-body">
         ¿Tenés alguna otra pregunta?
         <br />
